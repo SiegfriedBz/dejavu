@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.embla__slide {
+  flex: 0 0 100%; /* Slide covers 90% of the viewport */
+}
