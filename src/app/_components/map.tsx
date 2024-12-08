@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Map, { Marker, Popup } from "react-map-gl";
+import Map, { Marker, Popup, ScaleControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
 // import { FaHandHoldingHeart } from "react-icons/fa6";
@@ -35,7 +35,7 @@ const CustomMap = () => {
             setShowPopup(false);
           }}
           closeButton={false}
-          className="mt-24"
+          className="mt-[8.5rem] w-64 shadow-sm"
         >
           <MapPopup />
         </Popup>
@@ -47,6 +47,7 @@ const CustomMap = () => {
           <Image src={logo} height={44} width={44} alt="dejavu logo" />
         </Marker>
       </div>
+      <ScaleControl maxWidth={80} />
     </Map>
   );
 };
