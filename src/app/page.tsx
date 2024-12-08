@@ -7,69 +7,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import CustomMap from "./_components/map";
-
-const sectionsData = [
-  {
-    id: "massages",
-    title: "Massages",
-    items: [
-      {
-        id: 1,
-        title: "Balinese Massage",
-        description: "Balinese Massage is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-      {
-        id: 2,
-        title: "Deep Tissue Massage",
-        description: "Deep Tissue  Massage is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-    ],
-  },
-  {
-    id: "spa",
-    title: "SPA",
-    items: [
-      {
-        id: 1,
-        title: "Manicure",
-        description: "Manicure is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-      {
-        id: 2,
-        title: "Pedicure",
-        description: "Pedicure is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-    ],
-  },
-  {
-    id: "special-treatments",
-    title: "Special Treatments",
-    items: [
-      {
-        id: 1,
-        title: "Vaccum",
-        description: "Vaccum is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-      {
-        id: 2,
-        title: "Ratus Vagina",
-        description: "Ratus Vagina is...",
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
-        price: 120,
-      },
-    ],
-  },
-];
+import { SECTIONS_DATA } from "@/data/testimonials";
+import Testimonials, { TestimonialStars } from "./_components/testimonials";
 
 export default function Home() {
   return (
@@ -94,7 +33,7 @@ export default function Home() {
 
         <div className="p-8 pb-20 gap-16 sm:p-20 space-y-8">
           <Accordion type="single" collapsible>
-            {sectionsData.map((section) => {
+            {SECTIONS_DATA.map((section) => {
               const { title, id, items } = section;
 
               return (
@@ -108,6 +47,7 @@ export default function Home() {
                       <Accordion type="single" collapsible>
                         {items.map((item) => {
                           const { title, description, price, src } = item;
+
                           return (
                             <AccordionItem value={title} key={title}>
                               <AccordionTrigger>{title}</AccordionTrigger>
@@ -116,8 +56,8 @@ export default function Home() {
                                   <Image
                                     src={src}
                                     alt="title"
-                                    width={35}
-                                    height={35}
+                                    width={75}
+                                    height={75}
                                     className="rounded-full"
                                   />
                                   <div className="flex flex-col">
@@ -137,84 +77,10 @@ export default function Home() {
             })}
           </Accordion>
 
-          {/* <Accordion type="single" collapsible>
-            <AccordionItem value="massages">
-              <AccordionTrigger>
-                <h2 className="font-semibold" id="massages">
-                  Massages
-                </h2>
-              </AccordionTrigger>
-
-              <AccordionContent>
-                <div className="ps-4">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="balinese">
-                      <AccordionTrigger>Balinese Massage</AccordionTrigger>
-                      <AccordionContent>
-                        Balinese Massage is....
-                      </AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="deep-tissue">
-                      <AccordionTrigger>Deep Tissue Massage</AccordionTrigger>
-                      <AccordionContent>
-                        Deep Tissue Massage is....
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="spa">
-              <AccordionTrigger>
-                <h2 className="font-semibold" id="spa">
-                  SPA
-                </h2>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="ps-4">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="manicure">
-                      <AccordionTrigger>Manicure</AccordionTrigger>
-                      <AccordionContent>Manicure is....</AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="pedicure">
-                      <AccordionTrigger>Pedicure</AccordionTrigger>
-                      <AccordionContent>Pedicure is....</AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="treatments">
-              <AccordionTrigger>
-                <h2 className="font-semibold" id="treatments">
-                  Special Treatments
-                </h2>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="ps-4">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="r-vagina">
-                      <AccordionTrigger>Ratus Vagina</AccordionTrigger>
-                      <AccordionContent>Ratus Vagina is....</AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="vacuum">
-                      <AccordionTrigger>Vacuum...</AccordionTrigger>
-                      <AccordionContent>Vacuum... is....</AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion> */}
-
-          <div id="testimonials">
+          <div id="testimonials" className="w-full">
             <h2 className="font-semibold">Testimonials</h2>
+            <TestimonialStars />
+            <Testimonials />
           </div>
 
           <div id="visit-us">

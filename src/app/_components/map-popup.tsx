@@ -6,8 +6,6 @@ const MapPopup = () => {
     <div className="flex h-72 w-full flex-col items-center justify-center rounded-lg">
       <div className="w-full min-h-32 relative flex-1">
         <Image
-          // width="400"
-          // height="400"
           fill
           src="https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png"
           alt="dejavu massage"
@@ -20,7 +18,7 @@ const MapPopup = () => {
 
       <div>
         <a
-          href="https://g.co/kgs/96mGqdj"
+          href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""}
           target="_blank"
           className="my-2 flex flex-col items-center justify-center outline-none"
         >
