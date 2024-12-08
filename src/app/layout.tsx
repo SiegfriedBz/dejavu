@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dejavu-opal.vercel.app/"),
+  metadataBase: new URL("https://dejavu-massages-spa-canggu.vercel.app/"),
   title: "DejaVu Massage & SPA",
   description: "Best Massage & SPA in Canggu",
   openGraph: {
