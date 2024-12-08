@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
-import { FaHandHoldingHeart } from "react-icons/fa6";
+// import { FaHandHoldingHeart } from "react-icons/fa6";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
 
