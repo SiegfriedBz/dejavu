@@ -2,9 +2,11 @@
 
 import React, { useRef, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
-import { GiPeaceDove } from "react-icons/gi";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
+import { FaHandHoldingHeart } from "react-icons/fa6";
+import logo from "../../../public/logo.png";
+import Image from "next/image";
 
 const mapToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
@@ -41,10 +43,8 @@ const CustomMap = () => {
 
       <div onMouseEnter={() => setShowPopup(true)}>
         <Marker latitude={-8.6355522} longitude={115.1480162} anchor="bottom">
-          <GiPeaceDove
-            size={44}
-            color="rgb(4 120 87 / var(--tw-bg-opacity, 0.9))"
-          />
+          {/* <FaHandHoldingHeart className="text-3xl text-red-400" /> */}
+          <Image src={logo} height={44} width={44} alt="dejavu logo" />
         </Marker>
       </div>
     </Map>
