@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import CustomMap from "./_components/map";
 
 export default function Home() {
   return (
@@ -111,6 +112,7 @@ export default function Home() {
 
           <div id="visit-us">
             <h2 className="font-semibold">Visit us</h2>
+            <CustomMap />
           </div>
         </div>
       </main>
