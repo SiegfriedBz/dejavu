@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import { FaHandHoldingHeart } from "react-icons/fa6";
 
 const MapPopup = () => {

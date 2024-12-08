@@ -81,7 +81,7 @@ export function NavMenu() {
             <li>
               <DrawerClose asChild>
                 <Link
-                  href="/#treatments"
+                  href="/#special-treatments"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
                   <GiPeaceDove

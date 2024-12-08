@@ -8,6 +8,69 @@ import {
 } from "@/components/ui/accordion";
 import CustomMap from "./_components/map";
 
+const sectionsData = [
+  {
+    id: "massages",
+    title: "Massages",
+    items: [
+      {
+        id: 1,
+        title: "Balinese Massage",
+        description: "Balinese Massage is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+      {
+        id: 2,
+        title: "Deep Tissue Massage",
+        description: "Deep Tissue  Massage is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+    ],
+  },
+  {
+    id: "spa",
+    title: "SPA",
+    items: [
+      {
+        id: 1,
+        title: "Manicure",
+        description: "Manicure is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+      {
+        id: 2,
+        title: "Pedicure",
+        description: "Pedicure is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+    ],
+  },
+  {
+    id: "special-treatments",
+    title: "Special Treatments",
+    items: [
+      {
+        id: 1,
+        title: "Vaccum",
+        description: "Vaccum is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+      {
+        id: 2,
+        title: "Ratus Vagina",
+        description: "Ratus Vagina is...",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        price: 120,
+      },
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
@@ -31,6 +94,50 @@ export default function Home() {
 
         <div className="p-8 pb-20 gap-16 sm:p-20 space-y-8">
           <Accordion type="single" collapsible>
+            {sectionsData.map((section) => {
+              const { title, id, items } = section;
+
+              return (
+                <AccordionItem value={id} key={id} id={id}>
+                  <AccordionTrigger className="scroll-mt-32" id={id}>
+                    <h2 className="font-semibold">{title}</h2>
+                  </AccordionTrigger>
+
+                  <AccordionContent>
+                    <div className="ps-4">
+                      <Accordion type="single" collapsible>
+                        {items.map((item) => {
+                          const { title, description, price, src } = item;
+                          return (
+                            <AccordionItem value={title} key={title}>
+                              <AccordionTrigger>{title}</AccordionTrigger>
+                              <AccordionContent>
+                                <div className="flex gap-x-4 items-center">
+                                  <Image
+                                    src={src}
+                                    alt="title"
+                                    width={35}
+                                    height={35}
+                                    className="rounded-full"
+                                  />
+                                  <div className="flex flex-col">
+                                    <span>{description}</span>
+                                    <span>{price}IRD</span>
+                                  </div>
+                                </div>
+                              </AccordionContent>
+                            </AccordionItem>
+                          );
+                        })}
+                      </Accordion>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
+          </Accordion>
+
+          {/* <Accordion type="single" collapsible>
             <AccordionItem value="massages">
               <AccordionTrigger>
                 <h2 className="font-semibold" id="massages">
@@ -104,7 +211,7 @@ export default function Home() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
 
           <div id="testimonials">
             <h2 className="font-semibold">Testimonials</h2>
