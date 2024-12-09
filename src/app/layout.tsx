@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
 import WhatsAppButton from "./_components/whatsapp-button";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +44,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   );
