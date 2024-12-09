@@ -39,30 +39,55 @@ export default function Home() {
               return (
                 <AccordionItem value={id} key={id} id={id}>
                   <AccordionTrigger className="scroll-mt-32" id={id}>
-                    <h2 className="font-semibold">{title}</h2>
+                    <h2 className="font-semibold text-lg">{title}</h2>
                   </AccordionTrigger>
 
                   <AccordionContent>
                     <div className="ps-4">
                       <Accordion type="single" collapsible>
                         {items.map((item) => {
-                          const { title, description, price, src } = item;
+                          const { title, description, variants } = item;
 
                           return (
                             <AccordionItem value={title} key={title}>
-                              <AccordionTrigger>{title}</AccordionTrigger>
+                              <AccordionTrigger className="text-base">
+                                {title}
+                              </AccordionTrigger>
                               <AccordionContent>
-                                <div className="flex gap-x-4 items-center">
-                                  <Image
+                                <div className="flex flex-col gap-y-2 items-center">
+                                  {/* <Image
                                     src={src}
                                     alt="title"
                                     width={75}
                                     height={75}
                                     className="rounded-full"
-                                  />
-                                  <div className="flex flex-col">
-                                    <span>{description}</span>
-                                    <span>{price}IRD</span>
+                                  /> */}
+
+                                  <span>{description}</span>
+                                  <div className="flex flex-col w-full">
+                                    {variants?.map((v) => {
+                                      const { id, duration, price, outCall } =
+                                        v;
+
+                                      return (
+                                        <div
+                                          key={id}
+                                          className="w-full grid grid-cols-6"
+                                        >
+                                          <span className="col-span-1 font-semibold">
+                                            {duration}
+                                          </span>
+                                          <span className="col-span-2 text-center">
+                                            {price} IRD
+                                          </span>
+                                          {outCall && (
+                                            <span className="col-span-3 text-right font-semibold">
+                                              Outcall service
+                                            </span>
+                                          )}
+                                        </div>
+                                      );
+                                    })}
                                   </div>
                                 </div>
                               </AccordionContent>
@@ -78,13 +103,12 @@ export default function Home() {
           </Accordion>
 
           <div id="testimonials" className="w-full">
-            <h2 className="font-semibold">Testimonials</h2>
             <TestimonialStars />
             <Testimonials />
           </div>
 
           <div id="visit-us">
-            <h2 className="font-semibold">Visit us</h2>
+            <h2 className="font-semibold text-lg">Visit us</h2>
             <CustomMap />
           </div>
         </div>
