@@ -50,17 +50,17 @@ const Testimonials = () => {
                   <a
                     href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""}
                     target="_blank"
-                    className="ms-4 mt-2 flex items-center
-                        text-xl italic outline-none 
+                    className="mt-2 flex items-center
+                        text-lg italic outline-none 
                         md:mt-8 md:text-xl"
                   >
-                    Read full review on{" "}
+                    <span className="text-lg w-full">Read full review</span>
                     <Image
                       src={googleIcon}
                       width={40}
                       height={40}
                       alt="google-icon"
-                      className="ml-2 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16"
+                      className="me-6 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16"
                     />
                   </a>
                 </blockquote>
@@ -88,10 +88,12 @@ const renderStars = Array.from({ length: 5 }).map((_, i) => {
 
 export const TestimonialStars = () => {
   return (
-    <div id="testimonials-link" className="mx-auto mb-4 mt-8 md:my-4">
+    <div id="testimonials-link" className="mx-auto mb-2 mt-8 md:my-4">
       <a href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""} target="_blank">
-        <h4 className="text-center font-bold">Top-rated SPA in Canggu</h4>
-        <div className="mt-2 flex justify-center items-center w-full">
+        <h4 className="text-center text-lg font-bold">
+          Top-rated SPA in Canggu
+        </h4>
+        <div className="mt-1.5 flex justify-center items-center w-full">
           {renderStars}
         </div>
       </a>
