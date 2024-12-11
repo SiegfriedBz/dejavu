@@ -37,7 +37,7 @@ export function NavMenu() {
             <DrawerTitle>
               <div className="flex items-center justify-center space-x-3 w-full">
                 <Image src={logo} height={52} width={52} alt="dejavu logo" />
-                <h2 className="font-semibold opacity-90 tracking-wide">
+                <h2 className="font-semibold opacity-90 tracking-wider">
                   DejaVu Massage & SPA
                 </h2>
               </div>

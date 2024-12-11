@@ -12,7 +12,7 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <Carousel opts={{ loop: true }} autoplay={true} autoplayInterval={3000}>
-      <CarouselContent className="w-[82vw]">
+      <CarouselContent className="w-[92vw]">
         {TESTIMONIALS_QUOTES.map((quote, i) => {
           return (
             <CarouselItem key={`quote-${i}`} className="embla__slide">
@@ -22,14 +22,13 @@ const Testimonials = () => {
                     className='
                         line-clamp-4
                         text-xl 
-                        text-cf-dark
 
                         before:absolute
                         before:left-0
                         before:top-0
                         before:translate-x-1 before:translate-y-2
                         before:font-serif before:text-7xl
-                        before:text-cf-dark/25
+                        before:text-stone-400
                         before:content-["\201C"]
 
                         after:absolute
@@ -39,7 +38,8 @@ const Testimonials = () => {
 
                         after:-translate-y-10
                         after:font-serif after:text-7xl      
-
+                        
+                        after:text-stone-400
                         after:content-["\201D"]
 
                         md:text-2xl
@@ -66,7 +66,7 @@ const Testimonials = () => {
                 </blockquote>
                 <figcaption
                   className="mt-2 px-2
-                    text-right text-xl italic
+                    text-right text-xl italic text-stone-700
                     md:text-2xl"
                 >
                   &#8212; {quote.author}
@@ -90,7 +90,7 @@ export const TestimonialStars = () => {
   return (
     <div id="testimonials-link" className="mx-auto mb-2 mt-8 md:my-4">
       <a href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""} target="_blank">
-        <h4 className="text-center text-lg font-bold">
+        <h4 className="text-center text-lg font-semibold tracking-wider">
           Top-rated SPA in Canggu
         </h4>
         <div className="mt-1.5 flex justify-center items-center w-full">

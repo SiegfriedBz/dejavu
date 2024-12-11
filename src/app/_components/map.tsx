@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import Map, { Marker, Popup, ScaleControl } from "react-map-gl";
+import React, { Ref, useEffect, useRef, useState } from "react";
+import Map, { MapRef, Marker, Popup, ScaleControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
 // import { FaHandHoldingHeart } from "react-icons/fa6";
@@ -10,26 +10,40 @@ import Image from "next/image";
 
 const mapToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
+const CENTER = {
+  longitude: 115.15,
+  latitude: -8.645,
+};
+
 const CustomMap = () => {
-  const mapRef = useRef(null);
+  const mapRef = useRef<MapRef | null>(null);
   const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    if (mapRef?.current == null || !showPopup) return;
+
+    mapRef?.current?.flyTo({
+      center: [CENTER.longitude, CENTER.latitude + 0.02521],
+      duration: 2000,
+      zoom: 12,
+    });
+  }, [showPopup]);
 
   return (
     <Map
       ref={mapRef}
       mapboxAccessToken={mapToken}
       initialViewState={{
-        longitude: 115.1480162,
-        latitude: -8.6355522,
+        ...CENTER,
         zoom: 12,
       }}
-      style={{ width: "100%", height: 400 }}
+      style={{ width: "100%", height: 425 }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
       {showPopup && (
         <Popup
-          latitude={-8.6355522}
-          longitude={115.1480162}
+          latitude={-8.6195}
+          longitude={115.15}
           anchor="bottom"
           onClose={() => {
             setShowPopup(false);
@@ -42,7 +56,7 @@ const CustomMap = () => {
       )}
 
       <div onMouseEnter={() => setShowPopup(true)}>
-        <Marker latitude={-8.6355522} longitude={115.1480162} anchor="bottom">
+        <Marker latitude={-8.645} longitude={115.15} anchor="bottom">
           {/* <FaHandHoldingHeart className="text-3xl text-red-400" /> */}
           <Image src={logo} height={44} width={44} alt="dejavu logo" />
         </Marker>
