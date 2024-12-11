@@ -7,7 +7,7 @@ export const SECTIONS_DATA = [
         id: 1,
         title: "Balinese Massage",
         description:
-          "Experience the serenity of Balinese Massage—a full-body blend of acupressure, stretching, and aromatic oils. This traditional technique melts away tension, soothes pain, and deeply relaxes, leaving you refreshed and revitalized. Enjoy pure relaxation and restore balance to body and mind.",
+          "A soothing full-body massage combining acupressure, stretching, and aromatic oils. This traditional Balinese technique helps to melt away tension, relieve pain, and deeply relax both body and mind.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "120K", outCall: false },
@@ -20,7 +20,7 @@ export const SECTIONS_DATA = [
         id: 2,
         title: "Balinese Massage With Coconut Oil",
         description:
-          "Enjoy the serenity of Balinese Massage—a full-body blend of acupressure, stretching, combined with Coconut Oils to enhance relaxation, reduce stress, and promote well-being. This traditional technique melts tension, soothes pain, and leaves you feeling refreshed and renewed in both body and mind.",
+          "A relaxing Balinese massage enhanced with coconut oil, known for its hydrating and soothing properties. The warm oil is combined with traditional techniques to release tension, improve skin health, and promote overall relaxation.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "150K", outCall: false },
@@ -31,7 +31,7 @@ export const SECTIONS_DATA = [
         id: 3,
         title: "Balinese Massage & Scrub",
         description:
-          "Experience a soothing Balinese massage with our exclusive organic scrub, crafted from natural ingredients to gently exfoliate and nourish your skin. This revitalizing blend leaves you refreshed and glowing. Let our skilled therapists guide you through an unforgettable, restorative journey.",
+          "A Balinese massage paired with a rejuvenating organic scrub. This treatment exfoliates the skin using natural ingredients, leaving you with smooth, radiant skin while relieving muscle tension and stress.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1.5h", price: "270K", outCall: false },
@@ -42,7 +42,7 @@ export const SECTIONS_DATA = [
         id: 4,
         title: "Deep Tissue Massage",
         description:
-          "Experience our Deep Tissue Massage, using firm yet gentle pressure to reach deep muscle layers and connective tissues, relieving tension, soreness, and pain. This therapeutic treatment releases built-up stress, restoring comfort, flexibility, and balance to your body and mind.",
+          "A therapeutic massage focusing on deep muscle layers and connective tissues. Using firm pressure, this treatment targets areas of tension and discomfort, improving flexibility and relieving chronic pain.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1", price: "170K", outCall: false },
@@ -53,7 +53,7 @@ export const SECTIONS_DATA = [
         id: 5,
         title: "Deep Tissue Massage With Coconut Oil",
         description:
-          "Our Deep Tissue Massage combines firm yet gentle pressure to reach deep muscle layers and connective tissues, relieving tension, soreness, and pain. Enhanced with nourishing Coconut Oil, this treatment soothes and rejuvenates, promoting relaxation and overall well-being.",
+          "A deep tissue massage enhanced with nourishing coconut oil. This treatment helps to relax deep muscle layers while hydrating and soothing the skin, promoting relaxation and easing muscle tension.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1", price: "200K", outCall: false },
@@ -64,7 +64,7 @@ export const SECTIONS_DATA = [
         id: 6,
         title: "Deep Tissue & Scrub Massage",
         description:
-          "Experience our Deep Tissue Massage enhanced with a custom organic scrub blend. Crafted from natural ingredients, this scrub gently exfoliates, leaving your skin soft, smooth, and rejuvenated. Discover the perfect blend of relaxation and revitalizing skin care at DejaVu Massage & Spa.",
+          "A deep tissue massage combined with a revitalizing organic scrub. This treatment exfoliates the skin while using deep pressure to release muscle tension, leaving your body and skin feeling refreshed and rejuvenated.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1.5h", price: "300K", outCall: false },
@@ -75,7 +75,7 @@ export const SECTIONS_DATA = [
         id: 7,
         title: "Body Scrub Massage",
         description:
-          "Indulge in a revitalizing whole-body treatment that exfoliates and refreshes. Our special house blend, made from natural organic ingredients, gently removes dead skin cells and impurities, revealing soft, radiant skin. Treat yourself to this nourishing experience for a healthier, more vibrant you.",
+          "A full-body scrub that exfoliates and refreshes the skin. Using natural organic ingredients, this treatment removes dead skin cells and impurities, revealing soft, radiant skin while also promoting relaxation.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "170K", outCall: false },
@@ -86,7 +86,7 @@ export const SECTIONS_DATA = [
         id: 8,
         title: "4 Hands Massage",
         description:
-          "Indulge in our luxurious 4 Hands Massage—a full-body therapy performed by two therapists working in harmony. Their synchronized movements create a deeply relaxing experience, enhancing circulation and releasing tension for complete mind and body rejuvenation.",
+          "An indulgent full-body massage performed by two therapists working in perfect harmony. This synchronized therapy enhances relaxation, improves circulation, and releases deep muscle tension for a truly rejuvenating experience.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "250K", outCall: false },
@@ -97,7 +97,7 @@ export const SECTIONS_DATA = [
         id: 9,
         title: "Hot Stone Massage",
         description:
-          "Experience the soothing warmth of our Hot Stone Massage. Smooth, heated stones are placed on key points of the body, followed by gentle, therapeutic pressure from our skilled therapist. This treatment melts away tension, promotes deep relaxation, and restores balance to body and mind.",
+          "A relaxing treatment using heated stones placed on key points of the body. This soothing therapy, combined with gentle massage techniques, helps to melt away tension and restore balance to the body and mind.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1.5h", price: "300K", outCall: false },
@@ -113,7 +113,8 @@ export const SECTIONS_DATA = [
       {
         id: 1,
         title: "Manicure",
-        description: "Manicure is...",
+        description:
+          "A luxurious manicure to nourish and shape your nails, leaving them looking beautiful and healthy. Enjoy a relaxing hand massage along with a fresh polish application.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "300K", outCall: false },
@@ -123,7 +124,8 @@ export const SECTIONS_DATA = [
       {
         id: 2,
         title: "Pedicure",
-        description: "Pedicure is...",
+        description:
+          "A rejuvenating pedicure to refresh your feet and nails, including exfoliation, nail shaping, and a relaxing massage. The perfect way to pamper yourself and keep your feet looking their best.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "300K", outCall: false },
@@ -138,8 +140,9 @@ export const SECTIONS_DATA = [
     items: [
       {
         id: 1,
-        title: "Vaccum",
-        description: "Vaccum is...",
+        title: "Vacuum Therapy",
+        description:
+          "Vacuum therapy uses suction to stimulate the skin and underlying tissues, promoting circulation and helping to reduce cellulite. This non-invasive treatment is designed to smooth and tone the body.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "300K", outCall: false },
@@ -149,7 +152,8 @@ export const SECTIONS_DATA = [
       {
         id: 2,
         title: "Ratus Vagina",
-        description: "Ratus Vagina is...",
+        description:
+          "A traditional herbal treatment designed to cleanse and tone the vaginal area. This rejuvenating treatment helps restore balance and promote overall feminine wellness.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "300K", outCall: false },

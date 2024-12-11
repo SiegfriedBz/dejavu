@@ -31,7 +31,33 @@ export default function Home() {
           <ScrollArrow />
         </div>
 
-        <div className="p-8 pb-20 gap-16 sm:p-20 space-y-8">
+        <div className="pt-8 pb-0 px-4">
+          <h1 className="text-center font-medium text-2xl mb-2.5 tracking-wider">
+            Welcome to <span className="italic">DejaVu Massage & SPA</span> -
+            Your Relaxation Haven in Canggu
+          </h1>
+          <p className="text-justify">
+            At <span className="italic">DejaVu Massage & SPA</span>, we offer a
+            variety of treatments designed to rejuvenate your body and mind.
+            Whether you&apos;re looking for a soothing Balinese Massage, a
+            refreshing scrub, or a luxurious spa experience, our skilled
+            therapists tailor each treatment to your needs, ensuring deep
+            relaxation and restoration.
+          </p>
+          <h2 className="text-center tracking-wider font-medium text-xl mt-8 mb-2.5">
+            Outcall Services - We Bring the Spa to You
+          </h2>
+          <p className="text-justify">
+            For your convenience, we offer outcall services throughout Canggu.
+            Whether you&apos;re at a villa, hotel, or private residence, we
+            bring our high-quality treatments directly to you, creating a
+            peaceful spa experience wherever you are. Explore our services and
+            let us provide a personalized experience to help you unwind and feel
+            your best.
+          </p>
+        </div>
+
+        <div className="py-4 px-4 pb-20 gap-16 sm:p-20 space-y-8">
           <Accordion type="single" collapsible>
             {SECTIONS_DATA.map((section) => {
               const { title, id, items } = section;
@@ -39,18 +65,20 @@ export default function Home() {
               return (
                 <AccordionItem value={id} key={id} id={id}>
                   <AccordionTrigger className="scroll-mt-32" id={id}>
-                    <h2 className="font-semibold text-lg">{title}</h2>
+                    <h2 className="font-semibold text-lg tracking-wider">
+                      {title}
+                    </h2>
                   </AccordionTrigger>
 
                   <AccordionContent>
-                    <div className="ps-4">
+                    <div className="ps-2">
                       <Accordion type="single" collapsible>
                         {items.map((item) => {
                           const { title, description, variants } = item;
 
                           return (
                             <AccordionItem value={title} key={title}>
-                              <AccordionTrigger className="text-base">
+                              <AccordionTrigger className="text-base tracking-wide">
                                 {title}
                               </AccordionTrigger>
                               <AccordionContent>
@@ -63,8 +91,10 @@ export default function Home() {
                                     className="rounded-full"
                                   /> */}
 
-                                  <span>{description}</span>
-                                  <div className="flex flex-col w-full">
+                                  <span className="text-justify pe-2">
+                                    {description}
+                                  </span>
+                                  <div className="flex flex-col w-full gap-y-2">
                                     {variants?.map((v) => {
                                       const { id, duration, price, outCall } =
                                         v;
@@ -72,7 +102,7 @@ export default function Home() {
                                       return (
                                         <div
                                           key={id}
-                                          className="w-full grid grid-cols-6"
+                                          className="w-full grid grid-cols-6 px-2"
                                         >
                                           <span className="col-span-1 font-semibold">
                                             {duration}
