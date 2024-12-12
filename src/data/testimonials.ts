@@ -2,6 +2,9 @@ export const SECTIONS_DATA = [
   {
     id: "massages",
     title: "Massages",
+    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png",
+    blurSrc:
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1733562324/dejavu/laid.png",
     items: [
       {
         id: 1,
@@ -109,6 +112,9 @@ export const SECTIONS_DATA = [
   {
     id: "spa",
     title: "SPA",
+    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562032/dejavu/aroma_quhjh5.jpg",
+    blurSrc:
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1733562032/dejavu/aroma_quhjh5.jpg",
     items: [
       {
         id: 1,
@@ -137,6 +143,9 @@ export const SECTIONS_DATA = [
   {
     id: "special-treatments",
     title: "Special Treatments",
+    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734032993/dejavu/spanew3_icz03u.jpg",
+    blurSrc:
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734032993/dejavu/spanew3_icz03u.jpg",
     items: [
       {
         id: 1,
