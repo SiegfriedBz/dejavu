@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Ref, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Map, { MapRef, Marker, Popup, ScaleControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
