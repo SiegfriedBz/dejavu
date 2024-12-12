@@ -9,14 +9,14 @@ import Image from "next/image";
 
 const CustomAccordeons = () => {
   return (
-    <Accordion type="single" collapsible className="space-y-4">
+    <Accordion type="single" collapsible className="space-y-6">
       {SECTIONS_DATA.map((section) => {
         const { title, src, blurSrc, id, items } = section;
 
         return (
-          <AccordionItem value={id} key={id} id={id}>
+          <AccordionItem value={id} key={id} id={id} className="shadow-md">
             <AccordionTrigger
-              className="scroll-mt-32 grid grid-cols-8 gap-x-3"
+              className="scroll-mt-64 grid grid-cols-8 gap-x-3"
               id={id}
             >
               <Image
@@ -26,7 +26,7 @@ const CustomAccordeons = () => {
                 blurDataURL={blurSrc}
                 width={85}
                 height={85}
-                className="rounded-md col-span-3 shadow-md w-44 h-20"
+                className="rounded-r-md col-span-3 shadow-md w-44 h-20 opacity-90"
               />
               <h2 className="col-span-4 font-medium text-left text-lg tracking-wider">
                 {title}
@@ -41,7 +41,7 @@ const CustomAccordeons = () => {
 
                     return (
                       <AccordionItem value={title} key={title}>
-                        <AccordionTrigger className="text-base tracking-wide">
+                        <AccordionTrigger className="text-base tracking-wide pe-4">
                           {title}
                         </AccordionTrigger>
                         <AccordionContent>

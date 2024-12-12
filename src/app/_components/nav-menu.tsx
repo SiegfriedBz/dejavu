@@ -27,7 +27,10 @@ export function NavMenu() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline">
+        <Button
+          variant="outline"
+          className="bg-transparent text-stone-900 hover:text-stone-900 hover:bg-transparent"
+        >
           <Menu />
         </Button>
       </DrawerTrigger>
