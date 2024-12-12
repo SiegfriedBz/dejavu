@@ -6,8 +6,8 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div
-      className="sticky top-0 z-10 flex items-center justify-between px-1.5 pt-2 w-full h-full
-    bg-gradient-to-r from-stone-100 to-stone-50"
+      className="sticky top-0 z-[999] flex items-center justify-between px-1.5 pt-2 w-full h-full
+      bg-gradient-to-r from-stone-50 to-stone-50"
     >
       <Link href="/" className="flex items-center space-x-1">
         <Image src={logo} height={64} width={64} alt="dejavu logo" />

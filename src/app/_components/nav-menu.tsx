@@ -32,7 +32,7 @@ export function NavMenu() {
         </Button>
       </DrawerTrigger>
       <DrawerContent>
-        <div className="mx-auto w-[90vw] max-w-sm pb-8">
+        <div className="mx-auto w-[90vw] max-w-sm pb-8 bg-gradient-to-r from-stone-50 to-stone-50">
           <DrawerHeader>
             <DrawerTitle>
               <div className="flex items-center justify-center space-x-3 w-full">
@@ -55,10 +55,7 @@ export function NavMenu() {
                   href="/#massages"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <PiHandsPraying
-                    size={24}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.8))"
-                  />
+                  <PiHandsPraying size={24} color="hsl(var(--primary))" />
                   Massages
                 </Link>
               </DrawerClose>
@@ -69,10 +66,7 @@ export function NavMenu() {
                   href="/#spa"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <GiPeaceDove
-                    size={20}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.6))"
-                  />
+                  <GiPeaceDove size={20} color="hsl(var(--primary))" />
                   SPA
                 </Link>
               </DrawerClose>
@@ -84,10 +78,7 @@ export function NavMenu() {
                   href="/#special-treatments"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <GiPeaceDove
-                    size={20}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.6))"
-                  />
+                  <GiPeaceDove size={20} color="hsl(var(--primary))" />
                   Special Treatments
                 </Link>
               </DrawerClose>
@@ -99,10 +90,7 @@ export function NavMenu() {
                   href="/#testimonials"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <BsChatHeart
-                    size={20}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.8))"
-                  />
+                  <BsChatHeart size={20} color="hsl(var(--primary))" />
                   Testimonials
                 </Link>
               </DrawerClose>
@@ -113,10 +101,7 @@ export function NavMenu() {
                   href="/#visit-us"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <FiMapPin
-                    size={20}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.8))"
-                  />
+                  <FiMapPin size={20} color="hsl(var(--primary))" />
                   Visit us
                 </Link>
               </DrawerClose>
@@ -127,10 +112,7 @@ export function NavMenu() {
                   href="/about-us"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <IoPeopleOutline
-                    size={20}
-                    color="rgb(4 120 87 / var(--tw-bg-opacity, 0.8))"
-                  />
+                  <IoPeopleOutline size={20} color="hsl(var(--primary))" />
                   About us
                 </Link>
               </DrawerClose>
@@ -140,7 +122,7 @@ export function NavMenu() {
             <DrawerClose asChild>
               <Button
                 asChild
-                className="bg-emerald-600 mt-2 font-bold tracking-wide"
+                className="bg-primary text-primary-foreground mt-2 font-bold tracking-wide"
               >
                 <Link href={process.env.NEXT_PUBLIC_WHATSAPP_LINK || ""}>
                   Book Your Relaxation Today
