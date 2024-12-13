@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import getImageData from "@/lib/getImageData";
 import CustomImage from "../_components/custom-image";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const staff: { name: string; url1: string; url2: string; blurUrl: string }[] = [
   {
@@ -84,7 +85,11 @@ const page = async () => {
               </CardHeader>
               <div className="px-8 pb-4">
                 <CardContent className="relative h-[27rem] rounded-lg overflow-hidden">
-                  <Suspense fallback={<>LOADING</>}>
+                  <Suspense
+                    fallback={
+                      <Skeleton className="h-full w-full rounded-xl bg-primary/70" />
+                    }
+                  >
                     <CustomImage
                       imageDataPromise={imageDataPromise}
                       alt={name}

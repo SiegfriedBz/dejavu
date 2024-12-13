@@ -24,10 +24,10 @@ const Footer = () => {
         className="object-cover"
         src="https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562221/dejavu/footer.png"
         sizes="100vw"
-        alt="Description of my image"
+        alt="DejaVu Massage & SPA - Canggu Bali"
       />
       <div className="z-[999] text-xs font-medium absolute right-2 text-right top-[20%] flex flex-col">
-        <span className="">©{year} DejaVu Massage & Spa.</span>
+        <span className="">©{year} DejaVu Massage & Spa - Canggu.</span>
         <span className="">All Rights Reserved.</span>
       </div>
     </div>
