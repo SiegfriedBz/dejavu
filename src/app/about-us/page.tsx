@@ -77,7 +77,7 @@ const page = async () => {
 
         return (
           <div key={name} className="flex w-full min-h-[29rem]">
-            <Card className="w-full h-full py-4">
+            <Card className="w-full h-full py-4 bg-gradient-to-r from-stone-100 to-stone-50">
               <CardHeader className="px-4 py-2">
                 <CardTitle>{name}</CardTitle>
                 <CardDescription>Description...</CardDescription>
