@@ -10,7 +10,11 @@ import { SECTIONS_DATA } from "@/data/sections-data";
 
 const CustomAccordeons = () => {
   return (
-    <Accordion type="single" collapsible className="space-y-6">
+    <Accordion
+      type="single"
+      collapsible
+      className="min-h-[calc(76lvh-5.5rem)] flex flex-col justify-between"
+    >
       {SECTIONS_DATA.map((section) => {
         const { title, src, blurSrc, id, items } = section;
 

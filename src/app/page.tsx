@@ -14,16 +14,16 @@ export default function Home() {
 
         <div
           id="massages"
-          className="py-12 px-4 pb-16 gap-16 space-y-8 scroll-mt-[5rem]"
+          className="pt-8 pb-14 px-4 gap-16 space-y-8 scroll-mt-[5rem]"
         >
           <CustomAccordeons />
 
-          <div id="testimonials" className="w-full scroll-mt-[6rem]">
+          <div id="testimonials" className="w-full scroll-mt-[6rem] space-y-4">
             <TestimonialStars />
             <Testimonials />
           </div>
 
-          <div id="map" className="scroll-mt-[5.5rem]">
+          <div id="map" className="scroll-mt-[5.25rem]">
             <h2 className="font-semibold text-lg text-center text-primary mb-2">
               Come & Visit Us
             </h2>
