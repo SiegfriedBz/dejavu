@@ -4,27 +4,27 @@ export const STAFF_DATA: { name: string; url: string }[] = [
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
   },
   {
-    name: "A",
+    name: "Billa",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
   },
   {
-    name: "B",
+    name: "Gita",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734166938/dejavu/staff/IMG_1475_pzxqz0.png",
   },
   {
-    name: "C",
+    name: "Natali",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734167115/dejavu/staff/IMG_1469_i0il7v.png",
   },
   {
-    name: "D",
+    name: "Yustin",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115936/dejavu/staff/girl-d-1.jpg",
   },
   {
-    name: "E",
+    name: "Anie",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116520/dejavu/staff/girl-e-1.jpg",
   },
   {
-    name: "F",
+    name: "Novie",
     url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115778/dejavu/staff/girl-f-1.jpg",
   },
 ];

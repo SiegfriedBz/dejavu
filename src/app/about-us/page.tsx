@@ -13,16 +13,14 @@ import { Metadata } from "next";
 import { STAFF_DATA } from "@/data/sfaff-data";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://dejavu-massages-spa-canggu.vercel.app/about-us"
-  ),
+  metadataBase: new URL("https://dejavu-massages-spa-canggu.vercel.app"),
   title: "DejaVu Massage & SPA | About Us",
-  description: "Our Experienced Friendly Staff",
+  description: "Our Experienced & Friendly Staff",
   openGraph: {
     images: "/opengraph-image.png",
     title: "DejaVu Massage & SPA | About Us",
     description: "Our Experienced Friendly Staff",
-    url: `${process.env.NEXTAUTH_URL}/about-us`,
+    url: `${process.env.NEXTAUTH_URL}`,
   },
 };
 
