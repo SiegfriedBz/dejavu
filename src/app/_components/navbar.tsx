@@ -6,12 +6,12 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div
-      className="sticky top-0 z-[999] flex items-center justify-between px-1.5 pt-2 w-full h-full
+      className="sticky top-0 z-[999] flex items-center justify-between px-1.5 w-full h-full
       bg-gradient-to-r from-stone-50 to-stone-50"
     >
       <Link href="/" className="flex items-center space-x-1">
         <Image src={logo} height={64} width={64} alt="dejavu logo" />
-        <h2 className="font-semibold opacity-90 tracking-wider">
+        <h2 className="font-bold opacity-90 tracking-wider text-primary">
           DejaVu Massage & SPA
         </h2>
       </Link>

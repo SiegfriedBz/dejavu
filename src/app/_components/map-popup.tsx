@@ -20,13 +20,15 @@ const MapPopup = () => {
         <a
           href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""}
           target="_blank"
-          className="my-2 flex flex-col items-center justify-center outline-none"
+          className="my-2 text-lg flex flex-col items-center justify-center outline-none"
         >
-          <span className="text-lg w-full">Canggu&apos;s Secret</span>
-          <span className="text-lg">to Wellness</span>
+          <span className="">Canggu&apos;s Secret</span>
+          <span>
+            to <span className="font-normal">Wellness</span>
+          </span>
 
-          <div className="mt-2 -ms-[1.25rem] flex items-center justify-center gap-x-2">
-            <FaHandHoldingHeart className="text-2xl text-red-400" />
+          <div className="mt-2 -ms-[1.25rem] flex items-center justify-center gap-x-2 text-secondary">
+            <FaHandHoldingHeart className="text-xl" />
             <span className="text-center font-normal text-xl underline underline-offset-2">
               Visit us
             </span>

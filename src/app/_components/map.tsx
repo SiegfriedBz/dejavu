@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Ref, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Map, { MapRef, Marker, Popup, ScaleControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapPopup from "./map-popup";
@@ -37,7 +37,7 @@ const CustomMap = () => {
         ...CENTER,
         zoom: 12,
       }}
-      style={{ width: "100%", height: 425 }}
+      style={{ width: "100%", height: 420 }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
       {showPopup && (

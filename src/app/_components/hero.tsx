@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative mt-2 flex-1 h-[calc(100lvh-5.5rem)] w-screen rounded-sm overflow-hidden"
+      className="relative flex-1 h-[calc(100lvh-5.5rem)] w-screen rounded-sm overflow-hidden"
     >
       <Image
         className="dark:invert object-cover opacity-90"

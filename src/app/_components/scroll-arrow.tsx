@@ -4,12 +4,12 @@ import Link from "next/link";
 const ScrollArrow = () => {
   return (
     <Link
-      href="#massages"
+      href="#welcome"
       className="absolute bottom-0 left-1/2 w-full z-50 animate-bounce"
     >
       <CircleArrowDown
         size="1.75rem"
-        color="#f5f5f4"
+        color="hsl(var(--accent-foreground))"
         className="-translate-x-1/2"
       />
     </Link>
