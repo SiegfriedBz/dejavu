@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-
 import {
   Card,
   CardContent,
@@ -10,41 +9,26 @@ import {
 import getImageData from "@/lib/getImageData";
 import CustomImage from "../_components/custom-image";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Metadata } from "next";
+import { STAFF_DATA } from "@/data/sfaff-data";
 
-const staff: { name: string; url: string }[] = [
-  {
-    name: "Delillah",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://dejavu-massages-spa-canggu.vercel.app/about-us"
+  ),
+  title: "DejaVu Massage & SPA | About Us",
+  description: "Our Experienced Friendly Staff",
+  openGraph: {
+    images: "/opengraph-image.png",
+    title: "DejaVu Massage & SPA | About Us",
+    description: "Our Experienced Friendly Staff",
+    url: `${process.env.NEXTAUTH_URL}/about-us`,
   },
-  {
-    name: "A",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
-  },
-  {
-    name: "B",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734166938/dejavu/staff/IMG_1475_pzxqz0.png",
-  },
-  {
-    name: "C",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734167115/dejavu/staff/IMG_1469_i0il7v.png",
-  },
-  {
-    name: "D",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115936/dejavu/staff/girl-d-1.jpg",
-  },
-  {
-    name: "E",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116520/dejavu/staff/girl-e-1.jpg",
-  },
-  {
-    name: "F",
-    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115778/dejavu/staff/girl-f-1.jpg",
-  },
-];
+};
 
 const page = async () => {
   const staffDataPromise = await Promise.all([
-    ...staff.map((girl) => {
+    ...STAFF_DATA.map((girl) => {
       return { name: girl.name, imageDataPromise: getImageData(girl.url) };
     }),
   ]);

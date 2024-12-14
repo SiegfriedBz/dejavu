@@ -1,4 +1,4 @@
-import { SECTIONS_DATA } from "@/data/testimonials";
+import { SECTIONS_DATA } from "@/data/testimonials-data";
 import {
   Accordion,
   AccordionContent,

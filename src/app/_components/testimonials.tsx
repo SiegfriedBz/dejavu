@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import googleIcon from "../../../public/google_g_icon.png";
-import { TESTIMONIALS_QUOTES } from "@/data/testimonials";
+import { TESTIMONIALS_QUOTES } from "@/data/testimonials-data";
 import Image from "next/image";
 
 const Testimonials = () => {
