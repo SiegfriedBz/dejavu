@@ -4,7 +4,7 @@ import Link from "next/link";
 const ScrollArrow = () => {
   return (
     <Link
-      href="#header-text"
+      href="#welcome"
       className="absolute bottom-0 left-1/2 w-full z-50 animate-bounce"
     >
       <CircleArrowDown

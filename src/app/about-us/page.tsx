@@ -11,6 +11,7 @@ import CustomImage from "../_components/custom-image";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Metadata } from "next";
 import { STAFF_DATA } from "@/data/sfaff-data";
+import Cta from "../_components/cta";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dejavu-massages-spa-canggu.vercel.app"),
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/opengraph-image.png",
     title: "DejaVu Massage & SPA | About Us",
-    description: "Our Experienced Friendly Staff",
+    description: "Our Experienced & Friendly Staff",
     url: `${process.env.NEXTAUTH_URL}`,
   },
 };
@@ -32,8 +33,26 @@ const page = async () => {
   ]);
 
   return (
-    <div className="flex p-4 flex-col gap-8 min-w-full min-h-screen pt-6 pb-16">
-      <h1 className="text-xl font-semibold text-primary">About Us</h1>
+    <div className="flex p-4 flex-col gap-4 min-w-full min-h-screen pt-6 pb-12">
+      <h1 className="text-xl font-medium text-primary">About Us</h1>
+      <div className="space-y-2 text-justify">
+        <p>
+          Our{" "}
+          <span className="text-secondary">experienced and friendly team</span>{" "}
+          is here to welcome you{" "}
+          <span className="text-primary font-medium">
+            every day from 9 AM to 11 PM
+          </span>
+          .
+        </p>
+        <p>
+          Prefer to enjoy our services in the comfort of your own space? Choose
+          our <span className="text-secondary">Outcall Services</span>,
+          we&apos;re happy to bring the DéjàVu Massage & Spa experience to you
+          anywhere in Canggu.
+        </p>
+      </div>
+
       {staffDataPromise.map((girl) => {
         const { name, imageDataPromise } = girl;
 
@@ -62,6 +81,8 @@ const page = async () => {
           </div>
         );
       })}
+
+      <Cta />
     </div>
   );
 };

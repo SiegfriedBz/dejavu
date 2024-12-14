@@ -37,7 +37,7 @@ const CustomMap = () => {
         ...CENTER,
         zoom: 12,
       }}
-      style={{ width: "100%", height: 425 }}
+      style={{ width: "100%", height: 420 }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
       {showPopup && (
