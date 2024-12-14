@@ -3,7 +3,7 @@ import { getCldImageUrl } from "next-cloudinary";
 const getImageData = async (src: string) => {
   const imageUrl = getCldImageUrl({
     src: src,
-    width: 200, // Resize the original file to a smaller size
+    // Resize the original file to a smaller size
   });
 
   const response = await fetch(imageUrl);

@@ -11,62 +11,41 @@ import getImageData from "@/lib/getImageData";
 import CustomImage from "../_components/custom-image";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const staff: { name: string; url1: string; url2: string; blurUrl: string }[] = [
+const staff: { name: string; url: string }[] = [
   {
     name: "Delillah",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116159/dejavu/staff/girl-a-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
   },
   {
     name: "A",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116159/dejavu/staff/girl-a-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
   },
   {
     name: "B",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115843/dejavu/staff/girl-b-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734166938/dejavu/staff/IMG_1475_pzxqz0.png",
   },
   {
     name: "C",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115900/dejavu/staff/girl-a-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115815/dejavu/staff/girl-c-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734167115/dejavu/staff/IMG_1469_i0il7v.png",
   },
   {
     name: "D",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115936/dejavu/staff/girl-d-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115929/dejavu/staff/girl-d-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115936/dejavu/staff/girl-d-1.jpg",
   },
   {
     name: "E",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116520/dejavu/staff/girl-e-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116461/dejavu/staff/girl-e-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734116520/dejavu/staff/girl-e-1.jpg",
   },
   {
     name: "F",
-    url1: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115778/dejavu/staff/girl-f-1.jpg",
-    url2: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115740/dejavu/staff/girl-f-2.jpg",
-    blurUrl:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734115900/dejavu/staff/girl-a-1.jpg",
+    url: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734115778/dejavu/staff/girl-f-1.jpg",
   },
 ];
 
 const page = async () => {
   const staffDataPromise = await Promise.all([
     ...staff.map((girl) => {
-      return { name: girl.name, imageDataPromise: getImageData(girl.url1) };
+      return { name: girl.name, imageDataPromise: getImageData(girl.url) };
     }),
   ]);
 

@@ -20,7 +20,7 @@ const CustomImage = async (props: Props) => {
       alt={alt}
       placeholder="blur"
       blurDataURL={dataUrl}
-      className="object-contain min-h-[28rem]"
+      className="object-cover min-h-[27rem]"
     />
   );
 };
