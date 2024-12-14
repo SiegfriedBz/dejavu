@@ -50,8 +50,8 @@ const page = async () => {
   ]);
 
   return (
-    <div className="flex p-4 flex-col gap-8 min-w-full min-h-screen pt-8 pb-16">
-      <h1 className="text-xl font-semibold">About Us</h1>
+    <div className="flex p-4 flex-col gap-8 min-w-full min-h-screen pt-6 pb-16">
+      <h1 className="text-xl font-semibold text-primary">About Us</h1>
       {staffDataPromise.map((girl) => {
         const { name, imageDataPromise } = girl;
 
@@ -59,7 +59,7 @@ const page = async () => {
           <div key={name} className="flex w-full min-h-[29rem]">
             <Card className="w-full h-full py-4 bg-gradient-to-r from-stone-100 to-stone-50">
               <CardHeader className="px-4 py-2">
-                <CardTitle>{name}</CardTitle>
+                <CardTitle className="text-secondary">{name}</CardTitle>
                 <CardDescription>Description...</CardDescription>
               </CardHeader>
               <div className="px-8 pb-4">

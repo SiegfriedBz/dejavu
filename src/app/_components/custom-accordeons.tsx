@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const CustomAccordeons = () => {
   return (
@@ -14,11 +15,8 @@ const CustomAccordeons = () => {
         const { title, src, blurSrc, id, items } = section;
 
         return (
-          <AccordionItem value={id} key={id} id={id} className="shadow-md">
-            <AccordionTrigger
-              className="scroll-mt-64 grid grid-cols-8 gap-x-3"
-              id={id}
-            >
+          <AccordionItem value={id} key={id} className="shadow-md">
+            <AccordionTrigger className="grid grid-cols-8 gap-x-3" id={id}>
               <Image
                 src={src}
                 alt={title}
@@ -28,7 +26,11 @@ const CustomAccordeons = () => {
                 height={85}
                 className="rounded-r-md col-span-3 shadow-md w-44 h-20 opacity-90"
               />
-              <h2 className="col-span-4 font-medium text-left text-lg tracking-wider">
+              <h2
+                className={cn(
+                  "col-span-4 font-medium text-left text-lg tracking-wider text-primary"
+                )}
+              >
                 {title}
               </h2>
             </AccordionTrigger>
@@ -41,19 +43,18 @@ const CustomAccordeons = () => {
 
                     return (
                       <AccordionItem value={title} key={title}>
-                        <AccordionTrigger className="text-base tracking-wide pe-4">
+                        <AccordionTrigger
+                          className={cn(
+                            "text-base tracking-wide pe-4",
+                            title.toLowerCase() === "ratus vagina"
+                              ? "text-secondary"
+                              : "text-primary"
+                          )}
+                        >
                           {title}
                         </AccordionTrigger>
                         <AccordionContent>
                           <div className="flex flex-col gap-y-2 items-center">
-                            {/* <Image
-                                    src={src}
-                                    alt="title"
-                                    width={75}
-                                    height={75}
-                                    className="rounded-full"
-                                  /> */}
-
                             <span className="text-justify pe-2">
                               {description}
                             </span>
@@ -73,7 +74,7 @@ const CustomAccordeons = () => {
                                       {price} IRD
                                     </span>
                                     {outCall && (
-                                      <span className="col-span-3 text-right font-semibold">
+                                      <span className="col-span-3 text-right font-medium text-primary">
                                         Outcall service
                                       </span>
                                     )}

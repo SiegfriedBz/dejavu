@@ -183,7 +183,7 @@ export const TESTIMONIALS_QUOTES = [
     id: 8,
     message:
       "Excellent massage in the spa. Also tried the outcall service, even better at home :)",
-    author: "Jennie W.",
+    author: "Marco A.",
   },
   {
     id: 7,

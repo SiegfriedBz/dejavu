@@ -26,7 +26,7 @@ const Footer = () => {
         sizes="100vw"
         alt="DejaVu Massage & SPA - Canggu Bali"
       />
-      <div className="z-[999] text-xs font-medium absolute right-2 text-right top-[20%] flex flex-col">
+      <div className="z-[999] text-xs font-medium absolute right-2 text-right top-[18%] flex flex-col">
         <span className="">©{year} DejaVu Massage & Spa - Canggu.</span>
         <span className="">All Rights Reserved.</span>
       </div>

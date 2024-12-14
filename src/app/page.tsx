@@ -13,16 +13,19 @@ export default function Home() {
         <Hero />
         <HeaderText />
 
-        <div className="py-12 px-4 pb-20 gap-16 sm:p-20 space-y-12">
+        <div
+          id="massages"
+          className="py-12 px-4 pb-20 gap-16 sm:p-20 space-y-12 scroll-mt-[5rem]"
+        >
           <CustomAccordeons />
 
-          <div id="testimonials" className="w-full">
+          <div id="testimonials" className="w-full scroll-mt-[6rem]">
             <TestimonialStars />
             <Testimonials />
           </div>
 
-          <div id="visit-us">
-            <h2 className="font-semibold text-lg text-center">
+          <div id="visit-us" className="scroll-mt-[6rem]">
+            <h2 className="font-semibold text-lg text-center text-primary">
               Get Directions to Our Location
             </h2>
             <CustomMap />

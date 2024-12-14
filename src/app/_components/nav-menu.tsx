@@ -40,14 +40,16 @@ export function NavMenu() {
             <DrawerTitle>
               <div className="flex items-center justify-center space-x-3 w-full">
                 <Image src={logo} height={52} width={52} alt="dejavu logo" />
-                <h2 className="font-semibold opacity-90 tracking-wider">
+                <h2 className="font-semibold opacity-90 tracking-wider text-primary">
                   DejaVu Massage & SPA
                 </h2>
               </div>
             </DrawerTitle>
-            <DrawerDescription className="font-bold tracking-wide text-md pt-3 pb-2 flex flex-col gap-y-2">
-              <span>Relax, Refresh, Rejuvenate</span>
-              <span>Your Massage Oasis in Canggu!</span>
+            <DrawerDescription className="font-semibold tracking-wide text-md pt-3 pb-2 flex flex-col gap-y-2">
+              <span className="text-secondary">Relax, Refresh, Rejuvenate</span>
+              <span className="text-primary">
+                Your Massage Oasis in Canggu!
+              </span>
             </DrawerDescription>
           </DrawerHeader>
 
@@ -66,10 +68,10 @@ export function NavMenu() {
             <li>
               <DrawerClose asChild>
                 <Link
-                  href="/#spa"
+                  href="/#massages"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <GiPeaceDove size={20} color="hsl(var(--primary))" />
+                  <GiPeaceDove size={26} color="hsl(var(--primary))" />
                   SPA
                 </Link>
               </DrawerClose>
@@ -78,10 +80,10 @@ export function NavMenu() {
             <li>
               <DrawerClose asChild>
                 <Link
-                  href="/#special-treatments"
+                  href="/#massages"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <GiPeaceDove size={20} color="hsl(var(--primary))" />
+                  <GiPeaceDove size={26} color="hsl(var(--primary))" />
                   Special Treatments
                 </Link>
               </DrawerClose>
@@ -93,7 +95,7 @@ export function NavMenu() {
                   href="/#testimonials"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <BsChatHeart size={20} color="hsl(var(--primary))" />
+                  <BsChatHeart size={26} color="hsl(var(--primary))" />
                   Testimonials
                 </Link>
               </DrawerClose>
@@ -104,7 +106,7 @@ export function NavMenu() {
                   href="/#visit-us"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <FiMapPin size={20} color="hsl(var(--primary))" />
+                  <FiMapPin size={26} color="hsl(var(--primary))" />
                   Visit us
                 </Link>
               </DrawerClose>
@@ -115,7 +117,7 @@ export function NavMenu() {
                   href="/about-us"
                   className="font-semibold flex gap-x-2 items-center text-lg"
                 >
-                  <IoPeopleOutline size={20} color="hsl(var(--primary))" />
+                  <IoPeopleOutline size={28} color="hsl(var(--secondary))" />
                   About us
                 </Link>
               </DrawerClose>
