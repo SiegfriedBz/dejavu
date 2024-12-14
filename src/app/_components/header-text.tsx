@@ -11,7 +11,10 @@ const words = [
 
 const HeaderText = () => {
   return (
-    <div id="welcome" className="pt-6 px-4 scroll-mt-[4.75rem]">
+    <div
+      id="welcome"
+      className="px-4 scroll-mt-[4.75rem] h-[calc(100lvh-5.5rem)] flex flex-col justify-center"
+    >
       <h1 className="text-center font-medium text-2xl mb-2 tracking-wider">
         Welcome to{" "}
         <span className="italic text-primary">DejaVu Massage & SPA</span> - Your{" "}

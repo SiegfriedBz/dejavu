@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
           font-[family-name:var(--font-geist-sans)]
-          relative grid grid-rows-[5rem_1fr_3rem] items-center justify-items-center min-h-screen
+          relative grid grid-rows-[5.5rem_1fr_3rem] items-center justify-items-center min-h-screen
           bg-gradient-to-r from-stone-100 to-stone-50`}
       >
         <Navbar />
