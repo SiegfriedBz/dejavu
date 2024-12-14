@@ -48,8 +48,9 @@ const page = async () => {
         <p>
           Prefer to enjoy our services in the comfort of your own space? Choose
           our <span className="text-secondary">Outcall Services</span>,
-          we&apos;re happy to bring the DéjàVu Massage & Spa experience to you
-          anywhere in Canggu.
+          we&apos;re happy to bring the{" "}
+          <span className="text-primary italic">DéjàVu Massage & Spa</span>{" "}
+          experience to you anywhere in Canggu.
         </p>
       </div>
 
