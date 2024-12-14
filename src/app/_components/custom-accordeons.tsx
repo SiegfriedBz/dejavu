@@ -1,4 +1,3 @@
-import { SECTIONS_DATA } from "@/data/testimonials-data";
 import {
   Accordion,
   AccordionContent,
@@ -7,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { SECTIONS_DATA } from "@/data/sections-data";
 
 const CustomAccordeons = () => {
   return (
