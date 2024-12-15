@@ -11,40 +11,55 @@ const words = [
 
 const Welcome = () => {
   return (
-    <>
-      <h1 className="text-center font-medium text-2xl mb-2 tracking-wider">
-        Welcome to{" "}
-        <span className="italic text-primary">DejaVu Massage & SPA</span> - Your{" "}
-        <FlipWords words={words} className="text-secondary font-normal" />
-        <span className="inline-block">in Canggu</span>
-      </h1>
-      <p className="text-justify">
-        At{" "}
-        <span className="italic text-primary font-medium">
-          DejaVu Massage & SPA
-        </span>
-        , we offer a variety of treatments designed to{" "}
-        <span className="text-secondary font-medium">
-          rejuvenate your body and mind
-        </span>
-        . Whether you&apos;re looking for a soothing Balinese Massage, a
-        refreshing scrub, or a luxurious spa experience, our skilled therapists
-        tailor each treatment to your needs, ensuring deep relaxation and
-        restoration.
-      </p>
-      <h2 className="text-center tracking-wider font-medium text-xl mt-6 mb-2">
-        <span className="text-primary">Outcall Services</span>
-      </h2>
-      <p className="text-justify">
-        For your convenience, we offer{" "}
-        <span className="text-secondary font-medium">
-          outcall services throughout Canggu
-        </span>
-        . Whether you&apos;re at a villa, hotel, or private residence, we bring
-        our high-quality treatments directly to you, creating a peaceful spa
-        experience wherever you are.
-      </p>
-    </>
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-center font-medium text-2xl mb-2 tracking-wider">
+          Welcome to{" "}
+          <span className="italic text-primary">DejaVu Massage & SPA</span> -
+          Your{" "}
+          <FlipWords words={words} className="text-secondary font-normal" />
+          <span className="inline-block">in Canggu</span>
+        </h1>
+        <p className="text-justify">
+          At{" "}
+          <span className="italic text-primary font-medium">
+            DejaVu Massage & SPA
+          </span>
+          , we offer a variety of treatments designed to{" "}
+          <span className="text-primary font-medium">
+            rejuvenate your body and mind
+          </span>
+          . From soothing Balinese{" "}
+          <span className="text-secondary font-medium">massages</span> and
+          refreshing <span className="text-secondary font-medium">scrubs</span>,
+          to{" "}
+          <span className="text-secondary font-medium">
+            pampering spa experiences
+          </span>{" "}
+          and <span className="text-secondary font-medium">hair wash</span>{" "}
+          services, we tailor each treatment to your unique needs. We also
+          provide specialized treatments such as{" "}
+          <span className="text-secondary font-medium">Bekam Therapy</span> for
+          detoxification, and{" "}
+          <span className="text-secondary font-medium">Ratus Vagina</span> for
+          feminine health, ensuring deep relaxation, restoration, and wellness.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-center tracking-wider font-medium text-xl mb-2">
+          <span className="text-primary">Outcall Services</span>
+        </h2>
+        <p className="text-justify">
+          For your convenience, we offer{" "}
+          <span className="text-secondary font-medium">
+            outcall services throughout Canggu
+          </span>
+          . Whether you&apos;re at a villa, hotel, or private residence, we
+          bring our high-quality treatments directly to you, creating a peaceful
+          spa experience wherever you are.
+        </p>
+      </div>
+    </div>
   );
 };
 

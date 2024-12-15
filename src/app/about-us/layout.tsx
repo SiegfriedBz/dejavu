@@ -17,5 +17,5 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="pt-[5.5rem]"> {children}</div>;
+  return <div className="pt-[5.5rem] pb-12"> {children}</div>;
 }
