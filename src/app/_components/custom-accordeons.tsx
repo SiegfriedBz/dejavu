@@ -31,7 +31,7 @@ const CustomAccordeons = () => {
                 <AccordionTrigger className="pe-2">
                   <h2
                     className={cn(
-                      "col-span-4 font-medium text-left text-lg tracking-wider text-primary"
+                      "font-medium text-left text-lg tracking-wider text-primary"
                     )}
                   >
                     {title}

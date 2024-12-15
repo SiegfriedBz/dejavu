@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        `fixed top-0 z-[999] flex items-center justify-between px-2.5 w-full h-[5.5rem] transition duration-300
+        `fixed top-0 z-[999] flex items-center justify-between px-2.5 w-full h-[5rem] transition duration-300
       `,
         isScrolled || isAboutUsPage
           ? "bg-gradient-to-r from-stone-100 to-stone-50"
