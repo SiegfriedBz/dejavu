@@ -1,11 +1,5 @@
 import React, { Suspense } from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import getImageData from "@/lib/getImageData";
 import CustomImage from "../_components/custom-image";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -41,34 +35,36 @@ const page = async () => {
         </p>
       </div>
 
-      {staffDataPromise.map((girl) => {
-        const { name, imageDataPromise } = girl;
+      <ul className="space-y-8">
+        {staffDataPromise.map((girl) => {
+          const { name, imageDataPromise } = girl;
 
-        return (
-          <div key={name} className="flex w-full min-h-[29rem]">
-            <Card className="w-full h-full py-4 bg-gradient-to-r from-stone-100 to-stone-50">
-              <CardHeader className="px-4 py-2">
-                <CardTitle className="text-secondary">{name}</CardTitle>
-                <CardDescription>Description...</CardDescription>
-              </CardHeader>
-              <div className="px-8 pb-4">
-                <CardContent className="relative h-[27rem] rounded-lg overflow-hidden">
-                  <Suspense
-                    fallback={
-                      <Skeleton className="h-full w-full rounded-xl bg-primary/70" />
-                    }
-                  >
-                    <CustomImage
-                      imageDataPromise={imageDataPromise}
-                      alt={name}
-                    />
-                  </Suspense>
-                </CardContent>
-              </div>
-            </Card>
-          </div>
-        );
-      })}
+          return (
+            <li key={name}>
+              <Card className="shadow-md border-4 p-4 bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg  h-full">
+                <CardHeader className="p-0 mb-2">
+                  <CardTitle className="text-secondary">{name}</CardTitle>
+                  {/* <CardDescription>Description...</CardDescription> */}
+                </CardHeader>
+                <div className="w-full ">
+                  <CardContent className="relative w-full h-[32rem] rounded-lg overflow-hidden">
+                    <Suspense
+                      fallback={
+                        <Skeleton className="h-full w-full rounded-lg bg-primary/80" />
+                      }
+                    >
+                      <CustomImage
+                        imageDataPromise={imageDataPromise}
+                        alt={name}
+                      />
+                    </Suspense>
+                  </CardContent>
+                </div>
+              </Card>
+            </li>
+          );
+        })}
+      </ul>
 
       <Cta />
     </div>
