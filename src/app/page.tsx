@@ -1,36 +1,47 @@
 import CustomMap from "./_components/map";
 import Testimonials, { TestimonialStars } from "./_components/testimonials";
 import Hero from "./_components/hero";
-import HeaderText from "./_components/header-text";
+
 import CustomAccordeons from "./_components/custom-accordeons";
 import Cta from "./_components/cta";
+import Welcome from "./_components/welcome";
 
 export default function Home() {
   return (
     <div>
       <main>
         <Hero />
-        <HeaderText />
 
-        <div
-          id="massages"
-          className="pt-8 pb-14 px-4 gap-16 space-y-8 scroll-mt-[5rem]"
-        >
-          <CustomAccordeons />
+        <div className="px-4 space-y-12">
+          <div
+            id="welcome"
+            className="scroll-mt-[4.75rem] h-[calc(100lvh-5.5rem)] flex flex-col justify-center"
+          >
+            <Welcome />
+          </div>
 
-          <div id="testimonials" className="w-full scroll-mt-[6rem] space-y-4">
+          <div id="massages" className="scroll-mt-[6rem]">
+            <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
+              Discover Our Treatments
+            </h2>
+            <CustomAccordeons />
+          </div>
+
+          <div id="testimonials" className="scroll-mt-[6rem]">
             <TestimonialStars />
             <Testimonials />
           </div>
 
-          <div id="map" className="scroll-mt-[5.25rem]">
-            <h2 className="font-semibold text-lg text-center text-primary mb-2">
+          <div id="map" className="scroll-mt-[6rem] pb-8">
+            <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
               Come & Visit Us
             </h2>
             <CustomMap />
-          </div>
 
-          <Cta />
+            <div className="my-8">
+              <Cta />
+            </div>
+          </div>
         </div>
       </main>
     </div>

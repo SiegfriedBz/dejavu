@@ -9,21 +9,8 @@ import {
 import getImageData from "@/lib/getImageData";
 import CustomImage from "../_components/custom-image";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Metadata } from "next";
 import { STAFF_DATA } from "@/data/sfaff-data";
 import Cta from "../_components/cta";
-
-export const metadata: Metadata = {
-  metadataBase: new URL("https://dejavu-massages-spa-canggu.vercel.app"),
-  title: "DejaVu Massage & SPA | About Us",
-  description: "Our Experienced & Friendly Staff",
-  openGraph: {
-    images: "/opengraph-image.png",
-    title: "DejaVu Massage & SPA | About Us",
-    description: "Our Experienced & Friendly Staff",
-    url: `${process.env.NEXTAUTH_URL}`,
-  },
-};
 
 const page = async () => {
   const staffDataPromise = await Promise.all([

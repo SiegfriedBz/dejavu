@@ -9,12 +9,9 @@ const words = [
   "Wellness Refuge",
 ];
 
-const HeaderText = () => {
+const Welcome = () => {
   return (
-    <div
-      id="welcome"
-      className="px-4 scroll-mt-[4.75rem] h-[calc(100lvh-5.5rem)] flex flex-col justify-center"
-    >
+    <>
       <h1 className="text-center font-medium text-2xl mb-2 tracking-wider">
         Welcome to{" "}
         <span className="italic text-primary">DejaVu Massage & SPA</span> - Your{" "}
@@ -47,8 +44,8 @@ const HeaderText = () => {
         our high-quality treatments directly to you, creating a peaceful spa
         experience wherever you are.
       </p>
-    </div>
+    </>
   );
 };
 
-export default HeaderText;
+export default Welcome;

@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
-import WhatsAppButton from "./_components/whatsapp-button";
 import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
@@ -39,13 +38,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
           font-[family-name:var(--font-geist-sans)]
-          relative grid grid-rows-[5.5rem_1fr_3rem] items-center justify-items-center min-h-screen
+          relative grid grid-rows-[1fr_3rem] items-center justify-items-center min-h-screen
           bg-gradient-to-r from-stone-100 to-stone-50`}
       >
         <Navbar />
         {children}
         <Footer />
-        <WhatsAppButton />
 
         <Analytics />
       </body>
