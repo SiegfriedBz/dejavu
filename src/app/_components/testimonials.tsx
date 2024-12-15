@@ -89,7 +89,7 @@ const renderStars = Array.from({ length: 5 }).map((_, i) => {
 
 export const TestimonialStars = () => {
   return (
-    <div id="testimonials-link" className="mx-auto mb-2 mt-8 md:my-4">
+    <div id="testimonials-link" className="mx-auto">
       <a href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""} target="_blank">
         <h4 className="text-center text-primary text-lg font-semibold tracking-wider">
           Top-rated SPA in Canggu

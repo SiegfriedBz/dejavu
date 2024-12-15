@@ -15,7 +15,7 @@ export default function Home() {
         <div className="px-4 space-y-12">
           <div
             id="welcome"
-            className="scroll-mt-[4.75rem] h-[calc(100lvh-5.5rem)] flex flex-col justify-center"
+            className="scroll-mt-[4.75rem] min-h-[calc(100lvh-5.5rem)] pt-8"
           >
             <Welcome />
           </div>

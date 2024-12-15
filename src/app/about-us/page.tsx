@@ -20,7 +20,7 @@ const page = async () => {
   ]);
 
   return (
-    <div className="flex p-4 flex-col gap-4 min-w-full min-h-screen pt-6 pb-12">
+    <div className="flex px-4 flex-col gap-4 min-h-screen">
       <h1 className="text-xl font-medium text-primary">About Us</h1>
       <div className="space-y-2 text-justify">
         <p>

@@ -4,7 +4,7 @@ export const SECTIONS_DATA = [
     title: "Massages",
     src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png",
     blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1733562324/dejavu/laid.png",
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562324/dejavu/laid.png",
     items: [
       {
         id: 1,
@@ -114,10 +114,18 @@ export const SECTIONS_DATA = [
     title: "SPA",
     src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562032/dejavu/aroma_quhjh5.jpg",
     blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1733562032/dejavu/aroma_quhjh5.jpg",
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562032/dejavu/aroma_quhjh5.jpg",
     items: [
       {
         id: 1,
+        title: "Hair Wash with Head Massage",
+        description:
+          "Indulge in a rejuvenating experience that combines a tonic hair wash with a relaxing head massage to relieve stress and promote blood circulation. Followed by a professional hair dry or blowout, this treatment leaves your hair feeling clean, refreshed, and beautifully styled.",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
+        variants: [{ id: 1, duration: "1h", price: "300K", outCall: false }],
+      },
+      {
+        id: 2,
         title: "Manicure",
         description:
           "A luxurious manicure to nourish and shape your nails, leaving them looking beautiful and healthy. Enjoy a relaxing hand massage along with a fresh polish application.",
@@ -128,7 +136,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 2,
+        id: 3,
         title: "Pedicure",
         description:
           "A rejuvenating pedicure to refresh your feet and nails, including exfoliation, nail shaping, and a relaxing massage. The perfect way to pamper yourself and keep your feet looking their best.",
@@ -145,13 +153,13 @@ export const SECTIONS_DATA = [
     title: "Special Treatments",
     src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734032993/dejavu/spanew3_icz03u.jpg",
     blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:500/v1734032993/dejavu/spanew3_icz03u.jpg",
+      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734032993/dejavu/spanew3_icz03u.jpg",
     items: [
       {
         id: 1,
-        title: "Vacuum Therapy",
+        title: "Bekam Therapy",
         description:
-          "Vacuum therapy uses suction to stimulate the skin and underlying tissues, promoting circulation and helping to reduce cellulite. This non-invasive treatment is designed to smooth and tone the body.",
+          "Bekam therapy uses suction to stimulate the skin and underlying tissues, promoting circulation and helping to reduce cellulite. This non-invasive treatment is designed to smooth and tone the body.",
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733565145/dejavu/hero_01_fz07n2.jpg",
         variants: [
           { id: 1, duration: "1h", price: "300K", outCall: false },
