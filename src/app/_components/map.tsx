@@ -23,7 +23,7 @@ const CustomMap = () => {
     if (mapRef?.current == null || !showPopup) return;
 
     mapRef?.current?.flyTo({
-      center: [CENTER.longitude, CENTER.latitude + 0.02521],
+      center: [CENTER.longitude, CENTER.latitude + 0.015],
       duration: 2000,
       zoom: 12,
     });
@@ -37,7 +37,7 @@ const CustomMap = () => {
         ...CENTER,
         zoom: 12,
       }}
-      style={{ width: "100%", height: 420 }}
+      style={{ width: "100%", height: 380 }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
       {showPopup && (
@@ -49,7 +49,7 @@ const CustomMap = () => {
             setShowPopup(false);
           }}
           closeButton={false}
-          className="mt-[8.5rem] w-64 shadow-sm"
+          className="mt-[8.5rem] shadow-sm"
         >
           <MapPopup />
         </Popup>
