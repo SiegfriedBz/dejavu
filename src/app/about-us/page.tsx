@@ -41,13 +41,13 @@ const page = async () => {
 
           return (
             <li key={name}>
-              <Card className="shadow-md border-4 p-4 bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg  h-full">
+              <Card className="shadow-md border-4 p-4 bg-gradient-to-r from-stone-100 to-stone-50 rounded-lg h-full">
                 <CardHeader className="p-0 mb-2">
                   <CardTitle className="text-secondary">{name}</CardTitle>
                   {/* <CardDescription>Description...</CardDescription> */}
                 </CardHeader>
                 <div className="w-full ">
-                  <CardContent className="relative w-full h-[32rem] rounded-lg overflow-hidden">
+                  <CardContent className="relative w-full h-[32rem] rounded-lg overflow-hidden shadow-md">
                     <Suspense
                       fallback={
                         <Skeleton className="h-full w-full rounded-lg bg-primary/80" />

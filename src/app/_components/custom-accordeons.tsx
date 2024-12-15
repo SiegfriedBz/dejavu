@@ -17,14 +17,14 @@ const CustomAccordeons = () => {
 
           return (
             <div key={id} className="shadow-md border-4 rounded-md p-2">
-              <div className="flex-1 relative h-44">
+              <div className="flex-1 relative h-44 shadow-md">
                 <Image
                   src={src}
                   alt={title}
                   placeholder="blur"
                   blurDataURL={blurSrc}
                   fill
-                  className="rounded-md shadow-md opacity-90"
+                  className="rounded-md opacity-90"
                 />
               </div>
               <AccordionItem value={id}>
