@@ -2,9 +2,43 @@ export const SECTIONS_DATA = [
   {
     id: "massages",
     title: "Massages",
-    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png",
-    blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562324/dejavu/laid.png",
+    images: [
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771076/dejavu/massages/massage-girl_qjtsej.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771076/dejavu/massages/massage-girl_qjtsej.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562324/dejavu/laid.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773022/dejavu/massages/massage-man_1_euesgy.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734773022/dejavu/massages/massage-man_1_euesgy.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771078/dejavu/massages/massage-stone_dqks35.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771078/dejavu/massages/massage-stone_dqks35.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771087/dejavu/massages/girl-massage_v0wbbh.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771087/dejavu/massages/girl-massage_v0wbbh.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771076/dejavu/massages/massage-man-b_tgfzaf.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771076/dejavu/massages/massage-man-b_tgfzaf.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771083/dejavu/massages/massage-girl-b_cjpsx0.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771083/dejavu/massages/massage-girl-b_cjpsx0.jpg",
+      },
+    ],
     items: [
       {
         id: 1,
@@ -112,9 +146,28 @@ export const SECTIONS_DATA = [
   {
     id: "spa",
     title: "SPA",
-    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562032/dejavu/aroma_quhjh5.jpg",
-    blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562032/dejavu/aroma_quhjh5.jpg",
+    images: [
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771078/dejavu/spa_treatments/manicure_fyuwej.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771078/dejavu/spa_treatments/manicure_fyuwej.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734771087/dejavu/spa_treatments/pedicure_pxkhoi.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771087/dejavu/spa_treatments/pedicure_pxkhoi.jpg",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734772756/dejavu/spa_treatments/hair-wash_muvp7v.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734772756/dejavu/spa_treatments/hair-wash_muvp7v.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562032/dejavu/aroma_quhjh5.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562032/dejavu/aroma_quhjh5.jpg",
+      },
+    ],
     items: [
       {
         id: 1,
@@ -151,9 +204,29 @@ export const SECTIONS_DATA = [
   {
     id: "special-treatments",
     title: "Special Treatments",
-    src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734032993/dejavu/spanew3_icz03u.jpg",
-    blurSrc:
-      "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734032993/dejavu/spanew3_icz03u.jpg",
+    images: [
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773108/dejavu/special_treatments/ratus-a_shp6ha.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734773108/dejavu/special_treatments/ratus-a_shp6ha.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773114/dejavu/special_treatments/ratus-b_cbwqok.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773114/dejavu/special_treatments/ratus-b_cbwqok.png",
+      },
+
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773204/dejavu/special_treatments/bekam_nefiir.png",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734773204/dejavu/special_treatments/bekam_nefiir.png",
+      },
+      {
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734032993/dejavu/spanew3_icz03u.jpg",
+        blurSrc:
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734032993/dejavu/spanew3_icz03u.jpg",
+      },
+    ],
     items: [
       {
         id: 1,

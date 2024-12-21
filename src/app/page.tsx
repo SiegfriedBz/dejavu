@@ -1,7 +1,6 @@
 import CustomMap from "./_components/map";
 import Testimonials, { TestimonialStars } from "./_components/testimonials";
 import Hero from "./_components/hero";
-
 import CustomAccordeons from "./_components/custom-accordeons";
 import Cta from "./_components/cta";
 import Welcome from "./_components/welcome";

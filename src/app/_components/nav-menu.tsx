@@ -23,24 +23,12 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import Cta from "./cta";
-import { cn } from "@/lib/utils";
 
-type Props = {
-  isScrolled: boolean;
-};
-export function NavMenu(props: Props) {
-  const { isScrolled } = props;
-
+export function NavMenu() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button
-          className={cn(
-            isScrolled
-              ? "text-primary bg-transparent hover:text-secondary hover:bg-transparent"
-              : "hidden"
-          )}
-        >
+        <Button className="text-primary bg-transparent hover:text-secondary hover:bg-transparent">
           <Menu />
         </Button>
       </DrawerTrigger>
