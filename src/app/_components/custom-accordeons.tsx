@@ -7,33 +7,43 @@ import {
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { SECTIONS_DATA } from "@/data/sections-data";
+import CustomCarousel from "./custom-carousel";
+import { CarouselItem } from "@/components/ui/carousel";
 
 const CustomAccordeons = () => {
   return (
     <>
-      <Accordion type="single" collapsible className="flex flex-col gap-y-6">
+      <Accordion type="single" collapsible className="flex flex-col gap-y-10">
         {SECTIONS_DATA.map((section) => {
-          const { title, src, blurSrc, id, items } = section;
+          const { title, images, id, items } = section;
 
           return (
-            <div key={id} className="shadow-md border-4 rounded-md p-2">
-              <div className="flex-1 relative h-44 shadow-md">
-                <Image
-                  src={src}
-                  alt={title}
-                  placeholder="blur"
-                  blurDataURL={blurSrc}
-                  fill
-                  className="rounded-md opacity-90"
-                />
-              </div>
-              <AccordionItem value={id}>
+            <div
+              key={id}
+              className="shadow-md border-4 rounded-md p-2 flex flex-col justify-start items-center min-h-76"
+            >
+              <CustomCarousel className="w-[90vw] pt-1">
+                {images.map(({ src, blurSrc }) => {
+                  return (
+                    <CarouselItem
+                      key={`${id}-${src}`}
+                      className="relative h-44 rounded-md overflow-hidden"
+                    >
+                      <Image
+                        src={src}
+                        alt={title}
+                        placeholder="blur"
+                        blurDataURL={blurSrc}
+                        fill
+                        className="rounded-md opacity-90 object-cover h-44"
+                      />
+                    </CarouselItem>
+                  );
+                })}
+              </CustomCarousel>
+              <AccordionItem value={id} className="w-full self-start">
                 <AccordionTrigger className="pe-2">
-                  <h2
-                    className={cn(
-                      "font-medium text-left text-lg tracking-wider text-primary"
-                    )}
-                  >
+                  <h2 className="font-medium text-left text-lg tracking-wider text-primary">
                     {title}
                   </h2>
                 </AccordionTrigger>

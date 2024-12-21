@@ -1,25 +1,21 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+import { CarouselItem } from "@/components/ui/carousel";
 import googleIcon from "../../../public/google_g_icon.png";
 import Image from "next/image";
 import { TESTIMONIALS_QUOTES } from "@/data/testimonials-data";
+import CustomCarousel from "./custom-carousel";
 
 const Testimonials = () => {
   return (
-    <Carousel opts={{ loop: true }} autoplay={true} autoplayInterval={3000}>
-      <CarouselContent className="w-[92vw]">
-        {TESTIMONIALS_QUOTES.map((quote, i) => {
-          return (
-            <CarouselItem key={`quote-${i}`} className="embla__slide">
-              <figure>
-                <blockquote className="relative py-3 pl-12 pr-8 ">
-                  <p
-                    className='
+    <CustomCarousel className="w-[92vw] h-64">
+      {TESTIMONIALS_QUOTES.map((quote, i) => {
+        return (
+          <CarouselItem key={`quote-${i}`} className="embla__slide">
+            <figure>
+              <blockquote className="relative py-3 pl-12 pr-8 ">
+                <p
+                  className='
                         line-clamp-4
                         text-xl 
 
@@ -45,39 +41,38 @@ const Testimonials = () => {
                         md:text-2xl
                         text-muted-foreground
                       '
-                  >
-                    {quote.message}{" "}
-                  </p>
-                  <a
-                    href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""}
-                    target="_blank"
-                    className="mt-2 flex items-center
-                        text-lg italic outline-none"
-                  >
-                    <span className="text-lg w-full text-muted-foreground">
-                      Read full review
-                    </span>
-                    <Image
-                      src={googleIcon}
-                      width={40}
-                      height={40}
-                      alt="google-icon"
-                      className="me-6 h-10 w-10 sm:h-12 sm:w-12"
-                    />
-                  </a>
-                </blockquote>
-                <figcaption
-                  className="mt-2 px-2
-                    text-right text-xl italic text-muted-foreground"
                 >
-                  &#8212; {quote.author}
-                </figcaption>
-              </figure>
-            </CarouselItem>
-          );
-        })}
-      </CarouselContent>
-    </Carousel>
+                  {quote.message}{" "}
+                </p>
+                <a
+                  href={process.env.NEXT_PUBLIC_GOOGLE_MAPS_LINK || ""}
+                  target="_blank"
+                  className="mt-2 flex items-center
+                        text-lg italic outline-none"
+                >
+                  <span className="text-lg w-full text-muted-foreground">
+                    Read full review
+                  </span>
+                  <Image
+                    src={googleIcon}
+                    width={40}
+                    height={40}
+                    alt="google-icon"
+                    className="me-6 h-10 w-10 sm:h-12 sm:w-12"
+                  />
+                </a>
+              </blockquote>
+              <figcaption
+                className="mt-2 px-2
+                    text-right text-xl italic text-muted-foreground"
+              >
+                &#8212; {quote.author}
+              </figcaption>
+            </figure>
+          </CarouselItem>
+        );
+      })}
+    </CustomCarousel>
   );
 };
 

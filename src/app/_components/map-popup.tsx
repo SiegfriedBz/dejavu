@@ -1,10 +1,39 @@
 import Image from "next/image";
 import { FaHandHoldingHeart } from "react-icons/fa6";
+import CustomCarousel from "./custom-carousel";
+import { SECTIONS_DATA } from "@/data/sections-data";
+import { CarouselItem } from "@/components/ui/carousel";
+
+const MASSAGES_IMAGES = SECTIONS_DATA.find(
+  (section) => section.id === "massages"
+)?.images;
 
 const MapPopup = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="w-56 min-h-32 relative flex-1">
+      <CustomCarousel className="w-56 pt-1">
+        {MASSAGES_IMAGES?.map(({ src, blurSrc }) => {
+          return (
+            <CarouselItem
+              key={`map-${src}`}
+              className="max-w-56 h-24 rounded-md overflow-hidden"
+            >
+              <div className="flex-1 h-24 relative">
+                <Image
+                  src={src}
+                  alt="DejaVu Massage & SPA - Massages"
+                  placeholder="blur"
+                  blurDataURL={blurSrc}
+                  fill
+                  // className="rounded-md opacity-90 object-cover w-44 min-h-16"
+                  className="rounded-lg object-cover shadow-md "
+                />
+              </div>
+            </CarouselItem>
+          );
+        })}
+      </CustomCarousel>
+      {/* <div className="w-56 min-h-32 relative flex-1">
         <Image
           fill
           src="https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png"
@@ -14,7 +43,7 @@ const MapPopup = () => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="h-full rounded-lg object-cover shadow-md object-right"
         />
-      </div>
+      </div> */}
 
       <div>
         <a
