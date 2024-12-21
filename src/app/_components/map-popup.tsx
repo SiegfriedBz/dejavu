@@ -57,7 +57,7 @@ const MapPopup = () => {
           <div className="mt-1 -ms-[1.25rem] flex items-center justify-center gap-x-2 text-secondary">
             <FaHandHoldingHeart className="text-xl" />
             <span className="text-center font-normal text-lg underline underline-offset-2">
-              Visit us
+              Come & Relax
             </span>
           </div>
         </a>
