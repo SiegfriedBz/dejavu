@@ -8,7 +8,7 @@ import CustomCarousel from "./custom-carousel";
 
 const Testimonials = () => {
   return (
-    <CustomCarousel className="w-[92vw] h-64">
+    <CustomCarousel className="w-[92vw] h-[14.25rem]">
       {TESTIMONIALS_QUOTES.map((quote, i) => {
         return (
           <CarouselItem key={`quote-${i}`} className="embla__slide">
