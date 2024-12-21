@@ -33,7 +33,7 @@ export default function Home() {
 
           <div id="map" className="scroll-mt-[6rem] pb-8">
             <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
-              Come & Visit Us
+              Come & Relax
             </h2>
             <CustomMap />
 
