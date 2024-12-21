@@ -51,7 +51,7 @@ export function NavMenu() {
             Your Massage Oasis in Canggu!
           </DrawerDescription>
         </DrawerHeader>
-        <ul className="flex flex-col justify-start items-center my-2 space-y-4 tracking-wide">
+        <ul className="flex flex-col justify-around items-center mt-2 mb-4 space-y-4 tracking-wide">
           <li>
             <DrawerClose asChild>
               <Link
@@ -105,7 +105,7 @@ export function NavMenu() {
                 className="font-semibold flex gap-x-2 items-center text-lg"
               >
                 <FiMapPin size={24} color="hsl(var(--primary))" />
-                Visit us
+                Where to find us
               </Link>
             </DrawerClose>
           </li>
@@ -123,7 +123,7 @@ export function NavMenu() {
         </ul>
         <DrawerFooter>
           <DrawerClose asChild>
-            <Cta />
+            <Cta className="mb-1" />
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>

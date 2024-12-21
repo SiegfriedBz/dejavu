@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const Cta = () => {
+type Props = {
+  className?: string;
+};
+
+const Cta: React.FC<Props> = (props) => {
+  const { className = "" } = props;
+
   return (
-    <div className="space-y-2">
+    <div className={cn("space-y-2", className)}>
       <Button
         asChild
         size="lg"
