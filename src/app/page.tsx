@@ -12,10 +12,7 @@ export default function Home() {
         <Hero />
 
         <div className="px-4 space-y-14">
-          <div
-            id="welcome"
-            className="scroll-mt-[4.5rem] min-h-[calc(100lvh-5rem)] pt-8"
-          >
+          <div id="welcome" className="scroll-mt-[4.5rem] pt-6">
             <Welcome />
           </div>
 
