@@ -11,27 +11,24 @@ export default function Home() {
       <main>
         <Hero />
 
-        <div className="px-4 space-y-12">
-          <div
-            id="welcome"
-            className="scroll-mt-[4.75rem] min-h-[calc(100lvh-5rem)] pt-8"
-          >
+        <div className="px-4 space-y-14">
+          <div id="welcome" className="scroll-mt-[4.5rem] pt-6">
             <Welcome />
           </div>
 
-          <div id="massages" className="scroll-mt-[6rem]">
+          <div id="massages" className="scroll-mt-[6.2rem]">
             <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
               Discover Our Treatments
             </h2>
             <CustomAccordeons />
           </div>
 
-          <div id="testimonials" className="scroll-mt-[6rem]">
+          <div id="testimonials" className="scroll-mt-[6.2rem]">
             <TestimonialStars />
             <Testimonials />
           </div>
 
-          <div id="map" className="scroll-mt-[6rem] pb-8">
+          <div id="map" className="scroll-mt-[6.2rem] pb-8">
             <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
               Come & Relax
             </h2>
