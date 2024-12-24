@@ -17,7 +17,7 @@ export default function Home() {
           </div>
 
           <div id="massages" className="scroll-mt-[6.2rem]">
-            <h2 className="text-center text-primary tracking-wider font-medium text-xl mb-2">
+            <h2 className="text-center text-primary tsracking-wider font-medium text-xl mb-2">
               Discover Our Treatments
             </h2>
             <CustomAccordeons />
