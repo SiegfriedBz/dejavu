@@ -59,7 +59,7 @@ const CustomAccordeons = () => {
                             <AccordionTrigger
                               className={cn(
                                 "text-base tracking-wide pe-2",
-                                title.toLowerCase() === "ratus vagina"
+                                title.toLowerCase().includes("ratus")
                                   ? "text-secondary"
                                   : ""
                               )}
