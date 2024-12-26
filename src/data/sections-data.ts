@@ -246,9 +246,9 @@ export const SECTIONS_DATA = [
       },
       {
         id: 20,
-        title: "Hair & Neck Massage",
+        title: "Head & Neck Massage",
         description:
-          "A soothing treatment for the scalp, neck, and shoulders. This massage enhances blood flow, reduces stress, and leaves you feeling calm and rejuvenated.",
+          "A relaxing massage targeting the head, neck, and shoulders to release tension, alleviate headaches, and promote deep relaxation. This treatment is designed to improve circulation, reduce stress, and provide relief from muscle tightness in the upper body.",
         variants: [
           { id: 1, duration: "1h", price: "130K", outCall: false },
           { id: 2, duration: "1h", price: "200K", outCall: true },
@@ -294,7 +294,7 @@ export const SECTIONS_DATA = [
         title: "Hair Wash with Head Massage",
         description:
           "Indulge in a rejuvenating experience that combines a tonic hair wash with a relaxing head massage to relieve stress and promote blood circulation. Followed by a professional hair dry or blowout, this treatment leaves your hair feeling clean, refreshed, and beautifully styled.",
-        variants: [{ id: 1, duration: "45min", price: "100K", outCall: false }],
+        variants: [{ id: 1, duration: "1h", price: "100K", outCall: false }],
       },
       {
         id: 2,
@@ -328,12 +328,22 @@ export const SECTIONS_DATA = [
       },
       {
         id: 5,
-        title: "Nail Gel Removal with Polish",
+        title: "Nail Gel Removal Polish",
         description:
-          "A quick and effective service to safely remove gel nail polish, followed by a fresh coat of polish to leave your nails looking neat and stylish.",
+          "A quick and efficient service to remove gel polish from your nails, leaving them clean and ready for a fresh coat of polish or natural care. This treatment is perfect for maintaining healthy nails and preparing for your next manicure.",
         variants: [
           { id: 1, duration: "15min", price: "50K", outCall: false },
           { id: 2, duration: "15min", price: "75K", outCall: true },
+        ],
+      },
+      {
+        id: 6,
+        title: "Nail Gel Removal Gel",
+        description:
+          "A gentle yet thorough method for removing gel nails without causing damage to the natural nail. This treatment helps preserve nail health while effectively removing gel overlays for a fresh start, perfect for transitioning to a new style.",
+        variants: [
+          { id: 1, duration: "15min", price: "75K", outCall: false },
+          { id: 2, duration: "15min", price: "120K", outCall: true },
         ],
       },
     ],
