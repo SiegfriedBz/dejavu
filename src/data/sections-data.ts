@@ -264,6 +264,36 @@ export const SECTIONS_DATA = [
     ],
     items: [
       {
+        id: 7,
+        title: "Facial by Viva",
+        description:
+          "A nourishing facial treatment using Viva skincare products. Designed to hydrate, cleanse, and revitalize your skin for a refreshed, radiant look.",
+        variants: [
+          { id: 1, duration: "45min", price: "120K", outCall: false },
+          { id: 2, duration: "45min", price: "180K", outCall: true },
+        ],
+      },
+      {
+        id: 8,
+        title: "Facial by Biokos",
+        description:
+          "An advanced facial using Biokos products to deeply cleanse and moisturize the skin. This treatment is perfect for restoring natural balance and glow.",
+        variants: [
+          { id: 1, duration: "45min", price: "150K", outCall: false },
+          { id: 2, duration: "45min", price: "230K", outCall: true },
+        ],
+      },
+      {
+        id: 9,
+        title: "Ear Candle",
+        description:
+          "A holistic therapy using ear candles to gently remove impurities and improve overall ear health. This soothing treatment also promotes relaxation and a sense of well-being.",
+        variants: [
+          { id: 1, duration: "30min", price: "130K", outCall: false },
+          { id: 2, duration: "30min", price: "175K", outCall: true },
+        ],
+      },
+      {
         id: 1,
         title: "Hair Wash",
         description:
@@ -297,7 +327,6 @@ export const SECTIONS_DATA = [
           { id: 2, duration: "45min", price: "230K", outCall: true },
         ],
       },
-
       {
         id: 5,
         title: "Nail Gel Removal Polish",
@@ -316,36 +345,6 @@ export const SECTIONS_DATA = [
         variants: [
           { id: 1, duration: "15min", price: "75K", outCall: false },
           { id: 2, duration: "15min", price: "120K", outCall: true },
-        ],
-      },
-      {
-        id: 7,
-        title: "Facial by Viva",
-        description:
-          "A nourishing facial treatment using Viva skincare products. Designed to hydrate, cleanse, and revitalize your skin for a refreshed, radiant look.",
-        variants: [
-          { id: 1, duration: "45min", price: "120K", outCall: false },
-          { id: 2, duration: "45min", price: "180K", outCall: true },
-        ],
-      },
-      {
-        id: 8,
-        title: "Facial by Biokos",
-        description:
-          "An advanced facial using Biokos products to deeply cleanse and moisturize the skin. This treatment is perfect for restoring natural balance and glow.",
-        variants: [
-          { id: 1, duration: "45min", price: "150K", outCall: false },
-          { id: 2, duration: "45min", price: "230K", outCall: true },
-        ],
-      },
-      {
-        id: 9,
-        title: "Ear Candle",
-        description:
-          "A holistic therapy using ear candles to gently remove impurities and improve overall ear health. This soothing treatment also promotes relaxation and a sense of well-being.",
-        variants: [
-          { id: 1, duration: "30min", price: "130K", outCall: false },
-          { id: 2, duration: "30min", price: "175K", outCall: true },
         ],
       },
     ],
