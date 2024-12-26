@@ -73,7 +73,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 7,
+        id: 4,
         title: "Body Scrub Massage",
         description:
           "A full-body scrub that exfoliates and refreshes the skin. Using natural organic ingredients, this treatment removes dead skin cells and impurities, revealing soft, radiant skin while also promoting relaxation.",
@@ -83,7 +83,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 4,
+        id: 5,
         title: "Deep Tissue Massage",
         description:
           "A therapeutic massage focusing on deep muscle layers and connective tissues. Using firm pressure, this treatment targets areas of tension and discomfort, improving flexibility and relieving chronic pain.",
@@ -93,7 +93,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 5,
+        id: 6,
         title: "Deep Tissue Massage With Coconut Oil",
         description:
           "A deep tissue massage enhanced with nourishing coconut oil. This treatment helps to relax deep muscle layers while hydrating and soothing the skin, promoting relaxation and easing muscle tension.",
@@ -103,30 +103,10 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 6,
+        id: 7,
         title: "Deep Tissue & Scrub Massage",
         description:
           "A deep tissue massage combined with a revitalizing organic scrub. This treatment exfoliates the skin while using deep pressure to release muscle tension, leaving your body and skin feeling refreshed and rejuvenated.",
-        variants: [
-          { id: 1, duration: "1.5h", price: "300K", outCall: false },
-          { id: 2, duration: "1.5h", price: "400K", outCall: true },
-        ],
-      },
-      {
-        id: 8,
-        title: "4 Hands Massage",
-        description:
-          "An indulgent full-body massage performed by two therapists working in perfect harmony. This synchronized therapy enhances relaxation, improves circulation, and releases deep muscle tension for a truly rejuvenating experience.",
-        variants: [
-          { id: 1, duration: "1h", price: "240K", outCall: false },
-          { id: 2, duration: "1h", price: "360K", outCall: true },
-        ],
-      },
-      {
-        id: 9,
-        title: "Hot Stone Massage",
-        description:
-          "A relaxing treatment using heated stones placed on key points of the body. This soothing therapy, combined with gentle massage techniques, helps to melt away tension and restore balance to the body and mind.",
         variants: [
           { id: 1, duration: "1.5h", price: "300K", outCall: false },
           { id: 2, duration: "1.5h", price: "400K", outCall: true },
@@ -175,67 +155,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 14,
-        title: "Facial by Viva",
-        description:
-          "A nourishing facial treatment using Viva skincare products. Designed to hydrate, cleanse, and revitalize your skin for a refreshed, radiant look.",
-        variants: [
-          { id: 1, duration: "45min", price: "120K", outCall: false },
-          { id: 2, duration: "45min", price: "180K", outCall: true },
-        ],
-      },
-      {
-        id: 15,
-        title: "Facial by Biokos",
-        description:
-          "An advanced facial using Biokos products to deeply cleanse and moisturize the skin. This treatment is perfect for restoring natural balance and glow.",
-        variants: [
-          { id: 1, duration: "45min", price: "150K", outCall: false },
-          { id: 2, duration: "45min", price: "230K", outCall: true },
-        ],
-      },
-      {
-        id: 16,
-        title: "Foot Massage",
-        description:
-          "A relaxing massage focusing on the feet. This therapy relieves tension, improves circulation, and promotes overall well-being through targeted pressure points.",
-        variants: [
-          { id: 1, duration: "1h", price: "120K", outCall: false },
-          { id: 2, duration: "1h", price: "180K", outCall: true },
-        ],
-      },
-      {
-        id: 17,
-        title: "Foot Reflexology",
-        description:
-          "A therapeutic treatment applying pressure to specific points on the feet. Reflexology helps to restore balance, reduce stress, and improve overall health.",
-        variants: [
-          { id: 1, duration: "1h", price: "150K", outCall: false },
-          { id: 2, duration: "1h", price: "230K", outCall: true },
-        ],
-      },
-      {
         id: 18,
-        title: "Foot Scrub",
-        description:
-          "A rejuvenating treatment to exfoliate and cleanse your feet. The foot scrub removes dead skin, improves circulation, and leaves your feet feeling smooth and refreshed.",
-        variants: [
-          { id: 1, duration: "30min", price: "75K", outCall: false },
-          { id: 2, duration: "30min", price: "150K", outCall: true },
-        ],
-      },
-      {
-        id: 18,
-        title: "Foot & Back Massage",
-        description:
-          "A relaxing combination treatment targeting tension in the feet and back. This massage helps alleviate stress, reduce muscle pain, and promote overall relaxation.",
-        variants: [
-          { id: 1, duration: "1h", price: "150K", outCall: false },
-          { id: 2, duration: "1h", price: "230K", outCall: true },
-        ],
-      },
-      {
-        id: 19,
         title: "Back Massage",
         description:
           "A targeted therapy focusing on the muscles of the back. This massage relieves tension, improves flexibility, and promotes better posture and relaxation.",
@@ -245,13 +165,74 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 20,
+        id: 19,
         title: "Head & Neck Massage",
         description:
           "A relaxing massage targeting the head, neck, and shoulders to release tension, alleviate headaches, and promote deep relaxation. This treatment is designed to improve circulation, reduce stress, and provide relief from muscle tightness in the upper body.",
         variants: [
           { id: 1, duration: "1h", price: "130K", outCall: false },
           { id: 2, duration: "1h", price: "200K", outCall: true },
+        ],
+      },
+
+      {
+        id: 9,
+        title: "Hot Stone Massage",
+        description:
+          "A relaxing treatment using heated stones placed on key points of the body. This soothing therapy, combined with gentle massage techniques, helps to melt away tension and restore balance to the body and mind.",
+        variants: [
+          { id: 1, duration: "1.5h", price: "300K", outCall: false },
+          { id: 2, duration: "1.5h", price: "400K", outCall: true },
+        ],
+      },
+      {
+        id: 14,
+        title: "Foot Massage",
+        description:
+          "A relaxing massage focusing on the feet. This therapy relieves tension, improves circulation, and promotes overall well-being through targeted pressure points.",
+        variants: [
+          { id: 1, duration: "1h", price: "120K", outCall: false },
+          { id: 2, duration: "1h", price: "180K", outCall: true },
+        ],
+      },
+      {
+        id: 15,
+        title: "Foot Reflexology",
+        description:
+          "A therapeutic treatment applying pressure to specific points on the feet. Reflexology helps to restore balance, reduce stress, and improve overall health.",
+        variants: [
+          { id: 1, duration: "1h", price: "150K", outCall: false },
+          { id: 2, duration: "1h", price: "230K", outCall: true },
+        ],
+      },
+      {
+        id: 16,
+        title: "Foot Scrub",
+        description:
+          "A rejuvenating treatment to exfoliate and cleanse your feet. The foot scrub removes dead skin, improves circulation, and leaves your feet feeling smooth and refreshed.",
+        variants: [
+          { id: 1, duration: "30min", price: "75K", outCall: false },
+          { id: 2, duration: "30min", price: "150K", outCall: true },
+        ],
+      },
+      {
+        id: 17,
+        title: "Foot & Back Massage",
+        description:
+          "A relaxing combination treatment targeting tension in the feet and back. This massage helps alleviate stress, reduce muscle pain, and promote overall relaxation.",
+        variants: [
+          { id: 1, duration: "1h", price: "150K", outCall: false },
+          { id: 2, duration: "1h", price: "230K", outCall: true },
+        ],
+      },
+      {
+        id: 8,
+        title: "4 Hands Massage",
+        description:
+          "An indulgent full-body massage performed by two therapists working in perfect harmony. This synchronized therapy enhances relaxation, improves circulation, and releases deep muscle tension for a truly rejuvenating experience.",
+        variants: [
+          { id: 1, duration: "1h", price: "240K", outCall: false },
+          { id: 2, duration: "1h", price: "360K", outCall: true },
         ],
       },
     ],
@@ -290,14 +271,14 @@ export const SECTIONS_DATA = [
         variants: [{ id: 1, duration: "45min", price: "50K", outCall: false }],
       },
       {
-        id: 6,
+        id: 2,
         title: "Hair Wash with Head Massage",
         description:
           "Indulge in a rejuvenating experience that combines a tonic hair wash with a relaxing head massage to relieve stress and promote blood circulation. Followed by a professional hair dry or blowout, this treatment leaves your hair feeling clean, refreshed, and beautifully styled.",
         variants: [{ id: 1, duration: "1h", price: "100K", outCall: false }],
       },
       {
-        id: 2,
+        id: 3,
         title: "Manicure",
         description:
           "A luxurious manicure to nourish and shape your nails, leaving them looking beautiful and healthy. Enjoy a relaxing hand massage along with a fresh polish application.",
@@ -307,7 +288,7 @@ export const SECTIONS_DATA = [
         ],
       },
       {
-        id: 3,
+        id: 4,
         title: "Pedicure",
         description:
           "A rejuvenating pedicure to refresh your feet and nails, including exfoliation, nail shaping, and a relaxing massage. The perfect way to pamper yourself and keep your feet looking their best.",
@@ -316,16 +297,7 @@ export const SECTIONS_DATA = [
           { id: 2, duration: "45min", price: "230K", outCall: true },
         ],
       },
-      {
-        id: 4,
-        title: "Ear Candle",
-        description:
-          "A holistic therapy using ear candles to gently remove impurities and improve overall ear health. This soothing treatment also promotes relaxation and a sense of well-being.",
-        variants: [
-          { id: 1, duration: "30min", price: "130K", outCall: false },
-          { id: 2, duration: "30min", price: "175K", outCall: true },
-        ],
-      },
+
       {
         id: 5,
         title: "Nail Gel Removal Polish",
@@ -344,6 +316,36 @@ export const SECTIONS_DATA = [
         variants: [
           { id: 1, duration: "15min", price: "75K", outCall: false },
           { id: 2, duration: "15min", price: "120K", outCall: true },
+        ],
+      },
+      {
+        id: 7,
+        title: "Facial by Viva",
+        description:
+          "A nourishing facial treatment using Viva skincare products. Designed to hydrate, cleanse, and revitalize your skin for a refreshed, radiant look.",
+        variants: [
+          { id: 1, duration: "45min", price: "120K", outCall: false },
+          { id: 2, duration: "45min", price: "180K", outCall: true },
+        ],
+      },
+      {
+        id: 8,
+        title: "Facial by Biokos",
+        description:
+          "An advanced facial using Biokos products to deeply cleanse and moisturize the skin. This treatment is perfect for restoring natural balance and glow.",
+        variants: [
+          { id: 1, duration: "45min", price: "150K", outCall: false },
+          { id: 2, duration: "45min", price: "230K", outCall: true },
+        ],
+      },
+      {
+        id: 9,
+        title: "Ear Candle",
+        description:
+          "A holistic therapy using ear candles to gently remove impurities and improve overall ear health. This soothing treatment also promotes relaxation and a sense of well-being.",
+        variants: [
+          { id: 1, duration: "30min", price: "130K", outCall: false },
+          { id: 2, duration: "30min", price: "175K", outCall: true },
         ],
       },
     ],
