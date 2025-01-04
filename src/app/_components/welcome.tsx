@@ -31,7 +31,7 @@ const Welcome = () => {
           </p>
           <h2 className="py-2 before:content-['\201C'] after:content-['\201C'] italic text-center font-bold opacity-90 tracking-wider">
             One Massage Everyday Day
-            <span className="inline-block"> Keeps the Doctor Away</span>
+            <span className="inline-block"> Keeps the stress away</span>
           </h2>
           <p className="text-justify">
             From soothing Balinese{" "}
