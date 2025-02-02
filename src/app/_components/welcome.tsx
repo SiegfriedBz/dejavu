@@ -1,21 +1,13 @@
-import { FlipWords } from "@/components/ui/flip-words";
-
-const words = [
-  "Relaxation Haven",
-  "Blissful Refuge",
-  "Zenful Retreat",
-  "Healing Oasis",
-  "Harmony Retreat",
-  "Wellness Refuge",
-];
-
 const Welcome = () => {
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-center font-medium text-2xl mb-3 tracking-wider">
           Welcome to Your
-          <FlipWords words={words} className="text-secondary font-normal" />
+          <span className="inline-block text-secondary font-semibold opacity-90">
+            Healing Oasis
+          </span>
+          <br />
           <span className="inline-block">in Canggu</span>
         </h1>
         <div className="space-y-1.5">
@@ -29,7 +21,7 @@ const Welcome = () => {
               rejuvenate your body and mind.
             </span>
           </p>
-          <h2 className="py-2 before:content-['\201C'] after:content-['\201C'] italic text-center font-bold opacity-90 tracking-wider">
+          <h2 className="text-secondary py-2 before:content-['\201C'] after:content-['\201C'] italic text-center font-bold opacity-90 tracking-wider">
             One Massage a Day
             <span className="inline-block"> Keeps the stress away</span>
           </h2>

@@ -9,9 +9,9 @@ export const SECTIONS_DATA = [
           "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1734771076/dejavu/massages/massage-girl_qjtsej.jpg",
       },
       {
-        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/laid.png",
+        src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1733562324/dejavu/massages/laid.png",
         blurSrc:
-          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562324/dejavu/laid.png",
+          "https://res.cloudinary.com/dygpd9pkl/image/upload/e_blur:1000/v1733562324/dejavu/massages/laid.png",
       },
       {
         src: "https://res.cloudinary.com/dygpd9pkl/image/upload/v1734773022/dejavu/massages/massage-man_1_euesgy.png",
